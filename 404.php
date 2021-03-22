@@ -6,7 +6,7 @@
  *
  * @package _s
  */
-
+/**clement**/
 get_header();
 ?>
 
