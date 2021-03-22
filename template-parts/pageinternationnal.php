@@ -8,10 +8,10 @@ Template Name: groop
 get_header();
 ?>
 
-<div  class="sengager" style=background-image:url(<?php echo get_bloginfo('template_directory'). "/images/fond-engager.jpg"?>);>
+<div  class="sengager" style=background-image:url(<?php echo get_bloginfo('template_directory')?>."/images/fond-engager.jpg");>
     <section class="slogan">
         <h1>L'INTERNATIONNAL</h1>
-        <img alt="logo header" src= <?php echo home_url()."/wp-content/themes/reserviste-montbeliard/images/images-galerie/logo-titre.png"?>>
+        <img alt="logo header" src=<?php echo get_bloginfo('template_directory')?>"/images/images-galerie/logo-titre.png">
     </section>
 </div>
 
