@@ -1,0 +1,1023 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+@media (min-width: 991px) { /*sur ordi*/
+   /* .menu-content {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }*/
+
+    .list-menu {
+        display: flex!important;
+        justify-content: space-between;
+        width: 100%;
+        box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .item-menu {
+        flex: auto;
+    }
+
+    .list-menu .item-menu .sous .link-menu {
+        padding: 15px;
+        color: black;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+
+    .navegacao-mobile {
+        display: none!important;
+    }
+}
+
+.navegacao-mobile {
+    background: #ccc;
+    padding: 10px;
+    width: 53px;
+    cursor: pointer;
+}
+
+.linha-menu {
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background: #555;
+    margin: 4px;
+    display: block;
+}
+
+.input-menu-all {
+    display: none!important;
+}
+
+.list-menu {
+    display: none;
+    width: 100%;
+    background: black; /*barre de menu*/
+    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+}
+
+.item-menu {
+    flex: auto;
+}
+
+.item-menu .link-menu { /*menu carré*/
+    padding: 15px;
+    color: black;
+    display: block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.input-menu-all:checked ~ .list-menu {
+    display: block;
+
+}
+
+.input-menu-all:checked ~ .list-menu .link-menu  {
+    text-align: left;
+}
+
+.sous{ /*pour cacher les sous menu avec display none*/
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+
+ ul li:hover .sous{ /*pour voir les sous menu */
+    display: block ;
+}
+ul li{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+
+.list-menu > img{
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+}
+
+
+.list-menu > img:nth-child(1){
+    height: 70px;
+    width: 70px;
+}
+
+
+
+/*partie accueil--------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+
+.accueil > .slogan { /*grille */
+    display: grid;
+    grid-template: 1fr 5fr 5fr 1fr 1fr 1fr / 1fr 5fr 4fr 6fr;
+    height: 85vh;
+    width:100vw;
+    background-image: url(".../images/fond-accueil");
+    background-repeat: no-repeat;
+
+}
+
+.accueil > .slogan > img  { 
+    position: relative;
+    z-index: 800;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+
+.accueil > .slogan > h1  { /*position h1 ordi */
+    position: relative;
+    z-index: 800;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 40px;
+}
+
+.accueil > .slogan > h3  { /*position h3 ordi */
+    position: relative;
+    z-index: 800;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding-top: 70px;
+    font-size: 30px;
+}
+.accueil > .slogan > p  { /*position p ordi */
+    position: relative;
+    z-index: 800;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    padding-top: 250px;
+}
+
+.accueil > .slogan > .boutoninscrire  { /*position le bouton s'inscrire */
+    position: relative;
+    z-index: 999;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 4 ;
+    grid-row-end: 6 ;
+}
+
+/*fin accueil------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+/* styles 3 parties*/
+
+.test {
+    background-color: #EDEDED;
+
+}
+
+.test > .contenu2 {
+    background-color: darkgray;
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 3fr 1fr 1fr  / 1fr 4fr 1fr 4fr 1fr 4fr 1fr;
+    width:100vw;
+}
+
+.test > .contenu2 > .par1 {
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.test > .contenu2 > .par1 > p{
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding-bottom: 30px; /*pour que le bouton soit en bas*/
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 55em) {
+
+    .test > .contenu2{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 200vh;
+    }
+}
+
+.test > .contenu2 > .par1 > .boutoninscrire > a,
+.test > .contenu2 > .par2 > .boutoninscrire > a,
+.test > .contenu2 > .par3 > .boutoninscrire > a{ /*style du bouton */
+    background: radial-gradient(white, yellow);
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.test > .contenu2 > .par2 {
+    background-color: white;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.test > .contenu2 > .par2 > p{
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding-bottom: 30px; /*pour que le bouton soit en bas*/
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.test > .contenu2 > .par3 {
+    background-color: white;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.test > .contenu2 > .par3 > p{
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding-bottom: 30px; /*pour que le bouton soit en bas*/
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.test > .contenu2 > .par1 >h1,
+.test >.contenu2 > .par2 >h1,
+.test >.contenu2 >.par3 > h1{
+    position: relative;
+    z-index: 0;
+    text-decoration-color: red;
+    text-underline-position: right;
+}
+
+
+.test > .contenu2 > .par1 >.boutoninscrire,
+.test >.contenu2 > .par2 >.boutoninscrire,
+.test >.contenu2 >.par3 >.boutoninscrire{
+    float: right;
+}
+
+/*--------------------actualités------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+
+
+.actualités > .grille-actu { /*grille */
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr 4fr 1fr 4fr 1fr;
+    height: 100vh;
+}
+
+.actualités >.grille-actu > h1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+
+.actualités >.grille-actu > .actu1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.actualités >.grille-actu > .actu2 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.actualités >.grille-actu > .actu3 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+.actualités >.grille-actu > .actu1 > img,
+.actualités >.grille-actu > .actu2 > img,
+.actualités >.grille-actu > .actu3 > img{
+    width: 400px;
+}
+
+.actualités >.grille-actu > .actu1 > .boutoninscrire,
+.actualités >.grille-actu > .actu2 > .boutoninscrire,
+.actualités >.grille-actu > .actu3 > .boutoninscrire{
+    background: radial-gradient(white, yellow);
+    color: black;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin-right: 220px;
+}
+
+.carousel > h1{
+    margin-left: 40px;
+}
+
+
+.carousel {
+    position: relative;
+    margin-top: 26px;
+    height: 100vh;
+}
+
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    height: 500px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 55em) { /* image responsive tel*/
+    .carousel-item img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+
+/*------------------------------FOOTER------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+
+footer.piedpage > .contenu3 {
+    display: grid;
+    grid-template: 1fr 1fr/ 2fr 3fr 3fr 4fr;
+    height: 20vh;
+    width:100vw;
+    background-color: black;
+}
+footer.piedpage > .contenu3 > ul > li> a {
+    color: white;
+    text-decoration: none;
+}
+
+footer.piedpage > .contenu3 > ul {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+footer.piedpage > .contenu3 > img {
+    height: 100px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 55em) { /* logo reserv responsive tel*/
+    footer.piedpage >.contenu3 > ul {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 55em) { /* logo reserv responsive tel*/
+    footer.piedpage >.contenu3 > img {
+        height: 50px;
+   
+    }
+}
+
+
+
+.sengager > .slogan { /*grille */
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 5fr 3fr 5fr;
+    height: 40vh;
+    width:100vw;
+}
+
+.sengager {
+    background-repeat: no-repeat;
+}
+
+.sengager > .slogan > h1 {
+    font-size: 50px;
+    font-weight: normal;
+    grid-column-start: 2;
+}
+
+.sengager > .slogan > img {
+    grid-column-start: 4;
+}
+
+/*--------------------------------*/
+
+
+.introduction > .grille-intro {
+    display: grid;
+    grid-template: 1fr 2fr 1fr 3fr / 1fr 5fr 3fr 1fr;
+    height: 70vh;
+    width:100vw;
+    background-color:#EDEDED;
+}
+
+.introduction > .grille-intro > h2 {
+    font-weight: normal;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+
+}
+
+.introduction > .grille-intro >  p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+.introduction > .grille-intro > .image-lecture {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+}
+
+/*--------------------------------*/
+
+
+
+.contenu1 > .grille-contenu1 {
+    display: grid;
+    grid-template: 1fr 1fr 3fr 1fr / 1fr 5fr 5fr 1fr;
+    height: 71vh;
+    width:100vw;
+    background-color:#DEB3B3;
+}
+
+.contenu1 > .grille-contenu1 >  h2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+
+}
+
+.contenu1 > .grille-contenu1 >  p {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+
+}
+
+.contenu1 > .grille-contenu1 > .image-tombe {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+
+}
+
+
+
+/*----------------------------HISTOIRE DE L'ASSOC-----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+.introduction2 > .grille-introduction2 {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 3fr 1fr 1fr 1fr;
+    height: 100vh;
+    width:100vw;
+    background-color: #EDEDED;
+}
+
+.introduction2 > .grille-introduction2 >  p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.introduction2 > .grille-introduction2 > .image-raymond {
+    grid-column-start: 4;
+    grid-row-start: 2;
+     
+}
+
+/*--------------------------------*/
+
+.les-activites > .grille-activites {
+    display: grid;
+    grid-template: 1fr 2fr 2fr 2fr 1fr / 1fr 3fr 3fr 4fr 1fr 1fr;
+    height: 90vh;
+    width:100vw;
+    background-color: #A4A6CB;
+}
+
+.les-activites > .grille-activites > h2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+
+}
+
+.les-activites > .grille-activites > p {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.les-activites > .grille-activites > .image-ceremonie {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.les-activites > .grille-activites > .image-bas {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+}
+
+
+/*--------------------------------*/
+
+
+.proposons > .grille-proposons {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    height: 120vh;
+    width:100vw; 
+}
+
+.proposons > .grille-proposons > .texte1 {
+    background-color: #EDEDED;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    
+}
+
+
+.proposons > .grille-proposons > .image1 {
+    background-color: #DEB3B3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+.proposons > .grille-proposons > .image2 {
+    background-color: #EDEDED;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+}
+
+.proposons > .grille-proposons > .reseaux {
+    background-color: #DEB3B3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.proposons > .grille-proposons > .jumelage {
+    background-color: #EDEDED;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+}
+
+.proposons > .grille-proposons > .image3 {
+    background-color: #DEB3B3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+.proposons > .grille-proposons > .texte1 > h2, 
+.proposons > .grille-proposons > .texte1 > p,
+.proposons > .grille-proposons > .image1 > img,
+.proposons > .grille-proposons > .image2 > img,
+.proposons > .grille-proposons > .reseaux > h2,
+.proposons > .grille-proposons > .reseaux > p,
+.proposons > .grille-proposons > .jumelage > h2,
+.proposons > .grille-proposons > .jumelage > p,
+.proposons > .grille-proposons > .image3 > img {
+    margin-left: 40px;
+}
+
+
+/*----------------------------ARTICLES-----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+
+.articles > .grille-articles  {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 2fr 1fr 2fr 1fr;
+    height: 320vh;
+    width:100vw;
+    background-color: #EDEDED;
+}
+
+.articles > .grille-articles > .article1,
+.articles > .grille-articles > .article2,
+.articles > .grille-articles > .article3,
+.articles > .grille-articles > .article4{
+    background-color: white;
+}
+
+.articles > .grille-articles > .article1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.articles > .grille-articles > .article2 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.articles > .grille-articles > .article3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.articles > .grille-articles > .article4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+
+/*----------------------------RESERVE CITOYENNE----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+.intro-rc {
+    background-color: #EDEDED;
+    height: 40vh;
+}
+
+.intro-rc > p{
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.activite-principales > .grille-activité-principales {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    height: 45vh;
+    width: 100vw;
+    background-color: #A4A6CB;
+}
+
+
+.conditions > .grille-conditions{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    height: 130vh;
+    width:100vw; 
+}
+
+.conditions > .grille-conditions > .texte1 {
+    background-color: #EDEDED;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    
+}
+
+
+.conditions > .grille-conditions > .image1 {
+    background-color: #DEB3B3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 999;
+}
+
+.conditions > .grille-conditions > .agrement {
+    background-color: #EDEDED;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+}
+
+.conditions> .grille-conditions > .vide {
+    background-color: #DEB3B3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.conditions > .grille-conditions > .image-lombard {
+    background-color: #EDEDED;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+}
+
+.conditions > .grille-conditions > .duree {
+    background-color: #DEB3B3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+.conditions > .grille-conditions > .texte1 > h2, 
+.conditions > .grille-conditions > .texte1 > p,
+.conditions > .grille-conditions > .agrement > p,
+.conditions > .grille-conditions > .agrement > h3,
+.conditions > .grille-conditions > .image-lombard > img,
+.conditions > .grille-conditions > .image1 > img,
+.conditions > .grille-conditions > .duree > h2,
+.conditions > .grille-conditions > .duree > p {
+    margin-left: 40px;
+}
+
+.conditions > .grille-conditions > .image1 > img {
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------CONTRIBUER---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+.participate > .grille-participate {
+    display: grid;
+    grid-template: 1fr 3fr 1fr / 1fr 5fr 5fr;
+    height: 70vh;
+    width: 100vw;
+    background-color: #EDEDED;
+}
+
+.participate > .grille-participate > h2 {
+    grid-column-start: 3;
+}
+
+.participate > .grille-participate > p {
+    grid-column-start: 3;
+}
+
+.participate > .grille-participate > .image-participate {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+}
+
+
+
+.sympathisant > .grille-sympathisant {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 5fr 1fr;
+    height: 54vh;
+    width: 100vw;
+
+}
+
+.sympathisant > .grille-sympathisant > h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.sympathisant > .grille-sympathisant > p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.sympathisant > .grille-sympathisant > .image-sympathisant {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+
+.sympathisant > .grille-sympathisant > .bouton-membre {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+
+.donation > .grille-donation {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    height: 60vh;
+    width: 100vw;
+    background-color: #EDEDED;
+}
+
+.donation > .grille-donation > h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+.donation > .grille-donation > p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.donation > .grille-donation > .bouton-donation {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+.donation > .grille-donation > .image-donation {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+
+.intro-operar  {
+    background-color: #EDEDED;
+}
+
+.reserve-premier-niveau {
+    background-color: #A4A6CB;
+}
+
+.reserve-deuxieme-niveau {
+    background-color: #EDEDED;
+}
+
+
+@media screen and (max-width: 55em) { /* logo reserv responsive tel*/
+    .accueil > .slogan > h1 {
+        font-size: 20px;
+        grid-row-start: 2;
+    }
+
+    .accueil > .slogan > h3 {
+        font-size: 10px;
+        grid-row-start: 2;
+        padding-top: 0!important;
+    }
+}
+
+

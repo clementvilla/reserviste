@@ -1,0 +1,124 @@
+#sliderArticle {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 25vh;
+
+    overflow: hidden;
+    background-color: #404B49;
+
+}
+
+#sliderArticle ul {
+    width: 90%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-rows: 35vh;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sliderArticle ul > li {
+    width: 100%;
+    height: 25vh;
+}
+
+#sliderArticle .article {
+    width: 80%;
+    height: 25vh;
+    background-image: url("images/images-galerie/marche.jpg");
+    background-size: 100% auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    background-repeat: no-repeat;
+
+}
+
+#sliderArticle .vide {
+    width: 100%;
+    height: 15vh;
+}
+
+#sliderArticle .texte {
+    width: 100%;
+    height: 10vh;
+}
+
+#sliderArticle .texte h4 {
+    margin: 0;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 3vh 0 0 0;
+
+}
+
+/*main > #association h3:before {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*top: 3vh;*/
+    /*left: -4%;*/
+    /*background: #404B49;*/
+    /*height: 66%;*/
+    /*width: 27%;*/
+    /*z-index: -1;*/
+    /*transition: 0.4s;*/
+/*}*/
+
+.fleche {
+    position: absolute;
+    width: 100%;
+}
+
+.fleche button {
+    display: initial;
+    margin: 0;
+    margin-top: 15vh;
+
+}
+
+.gauche {
+    float: left;
+}
+
+.droite {
+    float: right;
+}
+
+#sliderContainer {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.sliderContent {
+    display: flex;
+    width: 300%;
+}
+
+.sliderContent > div {
+    width: 100%;
+    display: block;
+
+}
+
+
+
+
+
+
+
+
+
+

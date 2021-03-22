@@ -1,0 +1,39 @@
+eme-calendar-full {
+    margin : 50px;
+}
+
+.eventful {
+    background: #565AA6;
+}
+
+.next-month {
+ color :#BC3535;
+}
+.prev-month {
+    color: #BC3535;
+}
+
+.eventless-pre{
+    background-color: #FFFFFF;
+}
+.eventless-post{
+    background-color: #FFFFFF;
+}
+
+.fond{
+    background-color: #EDEDED;
+}
+
+table.eme-calendar-table td.eventful a, table.eme-calendar-table td.eventful-today a, div.eventful-today a, div.eventful a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+div.eventless-today, div.eventful-today {
+    background-color:  #565AA6;
+    }
+
+table.eme-calendar-table th.month_name{
+    padding-bottom: 20px;
+}
