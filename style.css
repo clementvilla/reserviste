@@ -46,11 +46,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Spectral+SC');
-
-
-@import url('lesuperstyledelaura.css');
-@import url('lautrestyledecharlotte.css');
 
 html {
 	line-height: 1.15; /* 1 */

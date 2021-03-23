@@ -21,8 +21,32 @@ get_header();
 
         <?php the_content() ?>
 
-    </main>
+</main>
 
+
+<!-- ARTICLES -->
+
+<?php 
+   // the query
+   $the_query = new WP_Query( array(
+      'posts_per_page' => 3,
+   )); 
+?>
+
+<?php if ( $the_query->have_posts() ) : ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+    <?php the_post_thumbnail(); ?>
+    <?php the_title(); ?>
+    <?php the_excerpt(); ?>
+    <a href="<?= the_permalink();?>">lien</a>
+
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
+
+<?php else : ?>
+  <p><?php __('Pas d\'articles'); ?></p>
+<?php endif; ?>
 
 
 <div class="carousel">
