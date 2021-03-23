@@ -166,6 +166,9 @@ function gkp_insert_css_in_head() {
 	wp_register_style('monsuperstyle', get_template_directory_uri() . '/monsuperstyle.css', array(), '1.0', 'all');
 	wp_enqueue_style('monsuperstyle');
 
+	wp_register_style('home', get_template_directory_uri() . '/custom-styles/home.css', array(), '1.0', 'all');
+	wp_enqueue_style('home');
+
 }
 
 

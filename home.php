@@ -26,7 +26,7 @@ get_header();
 
 <!-- ARTICLES -->
 
-<div class="wp-block-columns">
+<div class="wp-block-columns articles-preview">
     <?php 
        // the query
        $the_query = new WP_Query( array(
@@ -37,13 +37,13 @@ get_header();
     <?php if ( $the_query->have_posts() ) : ?>
       <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-        <div class="wp-block-column">
+        <div class="wp-block-column article-preview-item">
 
-            <?php the_post_thumbnail(array(100, 100)); ?>
             <h1><?php the_title(); ?></h1>
+            <?php the_post_thumbnail('medium'); ?>
             <?php the_excerpt(); ?>
 
-            <div class="wp-block-buttons">
+            <div class="wp-block-buttons article-preview-link">
                 <div class="wp-block-button is-style-outline">
                     <a class="wp-block-button__link" href="<?= the_permalink();?>">Lire la suite</a>
                 </div>
@@ -58,6 +58,8 @@ get_header();
       <p><?php __('Pas d\'articles'); ?></p>
     <?php endif; ?>
 </div>
+
+<!--Carousel -->
 
 <div class="carousel">
     <h1>L'association en images</h1>
