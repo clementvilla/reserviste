@@ -26,28 +26,38 @@ get_header();
 
 <!-- ARTICLES -->
 
-<?php 
-   // the query
-   $the_query = new WP_Query( array(
-      'posts_per_page' => 3,
-   )); 
-?>
+<div class="wp-block-columns">
+    <?php 
+       // the query
+       $the_query = new WP_Query( array(
+          'posts_per_page' => 3,
+       )); 
+    ?>
 
-<?php if ( $the_query->have_posts() ) : ?>
-  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+    <?php if ( $the_query->have_posts() ) : ?>
+      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-    <?php the_post_thumbnail(); ?>
-    <?php the_title(); ?>
-    <?php the_excerpt(); ?>
-    <a href="<?= the_permalink();?>">lien</a>
+        <div class="wp-block-column">
 
-  <?php endwhile; ?>
-  <?php wp_reset_postdata(); ?>
+            <?php the_post_thumbnail(array(100, 100)); ?>
+            <h1><?php the_title(); ?></h1>
+            <?php the_excerpt(); ?>
 
-<?php else : ?>
-  <p><?php __('Pas d\'articles'); ?></p>
-<?php endif; ?>
+            <div class="wp-block-buttons">
+                <div class="wp-block-button is-style-outline">
+                    <a class="wp-block-button__link" href="<?= the_permalink();?>">Lire la suite</a>
+                </div>
+            </div>
+            
+        </div>
 
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+
+    <?php else : ?>
+      <p><?php __('Pas d\'articles'); ?></p>
+    <?php endif; ?>
+</div>
 
 <div class="carousel">
     <h1>L'association en images</h1>
