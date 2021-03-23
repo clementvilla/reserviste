@@ -17,7 +17,7 @@
 
     <section class="contenu3">
 
-    <img alt="logo header" src= <?php echo home_url()."/wp-content/themes/reserviste-montbeliard/images/images-galerie/logo-titre.png"?>>
+    <img alt="logo header" src=<?php echo get_bloginfo('template_directory')?>/images/images-galerie/logo-titre.png>
         <ul>
             <li>
                 <a href="#">Association des réservistes <br> du pays de Montbéliard</a>

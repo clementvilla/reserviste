@@ -8,10 +8,10 @@ Template Name: articleType
 get_header()
 ?>
 
-<div  class="sengager" style=background-image:url(<?php echo get_bloginfo('template_directory'). "/images/fond-engager.jpg"?>);>
+<div  class="sengager" style=background-image:url(<?php echo get_bloginfo('template_directory')?>/images/fond-engager.jpg);>
     <section class="slogan">
         <h1>ARTICLES</h1>
-        <img alt="logo header" src= <?php echo home_url()."/wp-content/themes/reserviste-montbeliard/images/images-galerie/logo-titre.png"?>>
+        <img alt="logo header" src=<?php echo get_bloginfo('template_directory')?>/images/images-galerie/logo-titre.png>
     </section>
 </div>
 
@@ -23,28 +23,28 @@ get_header()
     
 
         <div class="article1">
-        <img alt="logo header" src= <?php echo home_url()."/wp-content/themes/reserviste-montbeliard/images/images-galerie/marche.jpg"?>>
+        <img alt="logo header" src= <?php echo home_url()."/<?php echo get_bloginfo('template_directory')?>/images/images-galerie/marche.jpg"?>>
             <h3>Comités - Bureaux</h3>
             <p>Les membres des comités <br>
              de nos associations</p>
         </div>
 
         <div class="article2">
-        <img alt="logo header" src= <?php echo home_url()."/wp-content/themes/reserviste-montbeliard/images/images-galerie/marche.jpg"?>>
+        <img alt="logo header" src= <?php echo home_url()."/<?php echo get_bloginfo('template_directory')?>/images/images-galerie/marche.jpg"?>>
             <h3>AG - 2019</h3>
             <p>Les points important de l'Assemblée <br>
              générale 2019.</p>
         </div>
 
         <div class="article3">
-        <img alt="logo header" src= <?php echo home_url()."/wp-content/themes/reserviste-montbeliard/images/images-galerie/marche.jpg"?>>
+        <img alt="logo header" src= <?php echo home_url()."/<?php echo get_bloginfo('template_directory')?>/images/images-galerie/marche.jpg"?>>
             <h3>Activités 2020 de la SociétéNeuchatêloise des Officiers</h3>
             <p>Activités 2020 SNO, notre association <br>
              partenaire en Suisse</p>
         </div>
 
         <div class="article4">
-        <img alt="logo header" src= <?php echo home_url()."/wp-content/themes/reserviste-montbeliard/images/images-galerie/marche.jpg"?>>
+        <img alt="logo header" src= <?php echo home_url()."/<?php echo get_bloginfo('template_directory')?>/images/images-galerie/marche.jpg"?>>
             <h3>Contenus du colis Solidarité Défense</h3>
             <p>Aperçu du contenu des colis Solidarité Défenseque chacun de nos <br>
                 soldat en opérationsreçoit à la <br>
