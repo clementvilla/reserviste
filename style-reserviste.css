@@ -54,7 +54,6 @@ nav > ul > li {
     padding: 14px 20px 14px 20px;
     position: relative;
     border-right: white solid 2px;
-
 }
 
 li > ul.submenu {
@@ -141,7 +140,7 @@ footer div:first-child img {
 footer div:last-child {
     display: inline-block;
     width: 33.333%;
-    
+
 }
 
 footer div:last-child img {
@@ -161,7 +160,6 @@ footer div:last-child img:first-child {
 }
 
 /*pour la page d'accueil*/
-
 
 
 /*
@@ -192,7 +190,7 @@ footer div:last-child img:first-child {
     background-image: url("images/fond-accueil.jpeg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    
+
 }*/
 
 #association {
@@ -211,11 +209,9 @@ footer div:last-child img:first-child {
 }*/
 
 
-
 #association div p, h3 {
     display: inline-block;
 }
-
 
 
 #association div {
@@ -452,9 +448,6 @@ footer div:last-child img:first-child {
     grid-template-rows: auto;
 
 }
-
-
-
 
 
 #articlType {
@@ -744,7 +737,7 @@ main#galerie {
 
 .container-calendar {
     width: 100%;
-    height: 200 h;
+    height: 200vh;
 }
 
 
@@ -753,13 +746,10 @@ p.wp-caption-text {
 }
 
 
-
-
-
-
 * {
     box-sizing: border-box;
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -768,145 +758,17 @@ body {
 }
 
 
-header > .menu-content > .menu{
+header div.menu-menu-container {
     height: 15vh;
-    width:100vw;
+    width: 100vw;
     background-color: white;
 }
-
-
 
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-
-}
-
-
-
-
-@media (min-width: 991px) { /*sur ordi*/
-   /* .menu-content {
-        max-width: 800px;
-        width: 100%;
-        margin: 0 auto;
-        display: block;
-    }*/
-
-    .list-menu {
-        display: flex!important;
-        justify-content: space-between;
-        width: 100%;
-        box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
-
-    }
-
-    .item-menu {
-        flex: auto;
-    }
-
-    .list-menu .item-menu .link-menu {
-        padding: 15px;
-        color: white;
-        transition: .4s;
-        cursor: pointer;
-
-    }
-
-    .item-menu .link-menu:hover {
-        color: orange;
-    }
-
-    .navegacao-mobile {
-        display: none!important;
-    }
-}
-
-.navegacao-mobile {
-    background: #ccc;
-    padding: 10px;
-    width: 53px;
-    cursor: pointer;
-}
-
-.linha-menu {
-    width: 25px;
-    height: 3px;
-    border-radius: 5px;
-    background: #555;
-    margin: 4px;
-    display: block;
-}
-
-.input-menu-all {
-    display: none!important;
-}
-
-.list-menu {
-    display: none;
-    width: 100%;
-    background: black; /*barre de menu*/
-    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
-}
-
-.item-menu {
-    flex: auto;
-}
-
-.item-menu .link-menu { /*menu carré*/
-    padding: 15px;
-    color: black;
-    display: block;
-    transition: .4s;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-}
-.input-menu-all:checked ~ .list-menu {
-    display: block;
-
-}
-
-.input-menu-all:checked ~ .list-menu .link-menu  {
-    text-align: left;
-}
-
-.sous{ /*pour cacher les sous menu avec display none*/
-    display: none;
-    box-shadow: 0px 1px 2px #CCC;
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
-    background-color: white;
-}
-
-
- ul li:hover .sous{ /*pour voir les sous menu */
-    display: block ;
-}
-ul li{
-    float: left;
-    width: 100%;
-    position: relative;
-}
-
-ul > li > a {
-    text-decoration: none;
-    color: black;
-    margin-left: 30px;
-}
-
-.list-menu > img{
-    height: 35px;
-    width: 35px;
-    margin-top: 10px;
-}
-
-.list-menu > img:nth-child(1){
-    height: 70px;
-    width: 70px;
 }
 
 
