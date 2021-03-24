@@ -624,18 +624,6 @@
         height: 220vh;
     }
 
-    #articlType h2 {
-        font-size: 1em;
-        margin-top: 8vh;
-    }
-
-    #articlType p {
-        width: 90%;
-    }
-
-    #articlType {
-        height: 200vh;
-    }
 }
 
 @media screen and (min-width: 930px) {
