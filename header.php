@@ -31,15 +31,17 @@
 
     <header>
 
-    <div>
+    <div class="header">
+        <!--
         <a href=<?php echo home_url() . "/accueil" ?>>
             <figure>
                 <img alt="logo header"
                      src= "<?php echo get_bloginfo('template_directory')?>/images/images-galerie/logo-header.png">
             </figure>
-        </a>
+        </a>-->
 
         <?php
+
         wp_nav_menu(array(
             'theme_location' => 'menu-1'
         )); ?>

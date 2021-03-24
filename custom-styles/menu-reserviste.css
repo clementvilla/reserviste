@@ -1,4 +1,56 @@
+/*elements avec header dedans*/
+
+header {
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+    z-index: 999;
+    display: flex;
+    position: fixed;
+}
+
+header > nav > ul {
+    list-style-type: none;
+}
+
+/*header > a > img {
+    width: 85px;
+    height: auto;
+    float: left;
+    flex: 1;
+    margin-top: 8px;
+}*/
+
+header div.menu-menu-container {
+    height: 15vh;
+    width: 100vw;
+    background-color: black;
+}
+
+header figure {
+    position: relative;
+    width: 10vw;
+    height: 8vh;
+    margin: 2vh 2vh 0 0;
+    text-align: center;
+    margin-left: 15px;
+    float: left;
+    flex: 1;
+}
+
+header figure img {
+    width: 45px;
+    height: 45px;
+}
+
+.header {
+    display: inline-block;
+}
+
+
+
 @media (min-width: 991px) {
+
     ul#menu-menu.menu {
         display: flex !important;
         justify-content: space-between;
@@ -10,18 +62,13 @@
         flex: auto;
     }
 
-    /*ul#menu-menu.menu .item-menu .submenu /*.link-menu {
-        padding: 15px;
-        color: black;
-        transition: .4s;
-        cursor: pointer;
-    }*/
-
     .menu li a {
-        padding: 15px;
+        padding: 0 15px;
         color: white;
         transition: .4s;
         cursor: pointer;
+        display: -webkit-box;
+        text-align: left;
     }
 
     .menu li a:hover {
@@ -31,7 +78,12 @@
     .navegacao-mobile {
         display: none !important;
     }
+}
 
+.menu-item a img {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
 }
 
 .navegacao-mobile {
@@ -40,6 +92,12 @@
     width: 53px;
     cursor: pointer;
 }
+
+.input-menu-all {
+    display: none !important;
+}
+
+/* elements avec .linha-menu dedans*/
 
 .linha-menu {
     width: 25px;
@@ -50,62 +108,16 @@
     display: block;
 }
 
-.input-menu-all {
-    display: none !important;
-}
+
+/*elements avec ul#menu-menu.menu dedans*/
 
 ul#menu-menu.menu {
     display: none;
     width: 100%;
-    background: black; /*barre de menu*/
+    /*background: black; /*barre de menu*/
     box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
-}
-
-.menu-item {
-    flex: auto;
-}
-
-.menu-item /*.link-menu*/ { /*menu carré*/
-    padding: 15px;
-    color: black;
-    display: block;
-    transition: .4s;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-}
-
-.input-menu-all:checked ~ ul#menu-menu.menu {
-    display: block;
-}
-
-.input-menu-all:checked ~ ul#menu-menu.menu /*.link-menu*/ {
-    text-align: left;
-}
-
-.submenu { /*pour cacher les sous menu avec display none*/
-    display: none;
-    box-shadow: 0 1px 2px #CCC;
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
-    background-color: white;
-}
-
-ul li:hover .submenu { /*pour voir les sous menus */
-    display: block;
-}
-
-ul li {
-    float: left;
-    width: 100%;
     position: relative;
-}
-
-ul > li > a {
-    text-decoration: none;
-    color: black;
-    margin-left: 30px;
+    top: 0;
 }
 
 ul#menu-menu.menu > img {
@@ -119,15 +131,132 @@ ul#menu-menu.menu > img:nth-child(1) {
     width: 70px;
 }
 
-.linha-menu {
-    width: 25px;
-    height: 3px;
-    border-radius: 5px;
-    background: #555;
-    margin: 4px;
+
+
+
+/*elements avec .menu-item dedans*/
+
+
+.menu-item {
+    flex: auto;
+}
+
+.menu-item /*.link-menu*/ /*li a*/ { /*menu carré*/
+    padding: 15px;
+    color: black;
     display: block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+
+/*ul li {
+    float: left;
+    width: 100%;
+    position: relative;
+}*/
+
+ul > li > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+/*.sub-menu {
+    display: none;
+}
+
+.sub-menu:hover {
+    display: block;
+}*/
+
+ul li .sub-menu{
+display: none;
+}
+
+ul li:hover .sub-menu {
+    display: block;
+}
+
+/*elements avec submenu dedans*/
+
+
+.submenu { /*pour cacher les sous menu avec display none*/
+    display: none;
+    box-shadow: 0 1px 2px #CCC;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
 }
 
 .input-menu-all {
     display: none !important;
+}
+
+
+
+nav {
+    width: 100%;
+    height: 15vh;
+}
+
+
+svg {
+    width: 15%;
+    height: auto;
+}
+
+/*pour la nav*/
+
+nav > ul {
+    width: 100%;
+    height: 15vh;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    left: 8px;
+    position: relative;
+}
+
+nav > ul > li {
+    float: left;
+    padding: 14px 20px 14px 20px;
+    position: relative;
+    border-right: white solid 2px;
+}
+
+li > ul.submenu {
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+    display: none;
+    border-radius: 5px;
+}
+
+li:hover .submenu {
+    display: block;
+
+}
+
+.submenu li {
+    padding: 3px;
+}
+
+nav > ul > li > a > img, nav > ul > li > img {
+    position: relative;
+    display: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
