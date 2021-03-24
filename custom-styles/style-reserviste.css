@@ -151,7 +151,7 @@ footer div:last-child img {
 footer div:last-child img:first-child {
     width: 20%;
     height: auto;
-    background-image: url("images/images-menu/facebook.png");
+    background-image: url("../images/images-menu/facebook.png");
 }
 
 .reseau {

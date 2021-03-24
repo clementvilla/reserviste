@@ -7,7 +7,7 @@ eme-calendar-full {
 }
 
 .next-month {
- color :#BC3535;
+    color :#BC3535;
 }
 .prev-month {
     color: #BC3535;
@@ -32,7 +32,7 @@ table.eme-calendar-table td.eventful a, table.eme-calendar-table td.eventful-tod
 
 div.eventless-today, div.eventful-today {
     background-color:  #565AA6;
-    }
+}
 
 table.eme-calendar-table th.month_name{
     padding-bottom: 20px;

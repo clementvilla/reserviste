@@ -122,24 +122,24 @@ add_action( 'widgets_init', '_s_widgets_init' );
 function _s_scripts() {
 	wp_enqueue_style( '_s-style', get_stylesheet_uri() );
 
-    wp_enqueue_style( '_menu-reserviste', get_template_directory_uri().'/menu-reserviste.css');
+    wp_enqueue_style( '_menu-reserviste', get_template_directory_uri().'/custom-styles/menu-reserviste.css');
 
-    wp_register_style('mobile', get_template_directory_uri() . '/mobile.css', array(), '1.0', 'all');
+    wp_register_style('mobile', get_template_directory_uri() . '/custom-styles/mobile.css', array(), '1.0', 'all');
     wp_enqueue_style('mobile');
 
-    wp_register_style('style-typo', get_template_directory_uri() . '/style-typo.css', array(), '1.0', 'all');
+    wp_register_style('style-typo', get_template_directory_uri() . '/custom-styles/style-typo.css', array(), '1.0', 'all');
     wp_enqueue_style('style-typo');
 
-    wp_register_style('animation', get_template_directory_uri() . '/animation.css', array(), '1.0', 'all');
+    wp_register_style('animation', get_template_directory_uri() . '/custom-styles/animation.css', array(), '1.0', 'all');
     wp_enqueue_style('animation');
 
-    wp_register_style('evenement-reserviste', get_template_directory_uri() . '/evenement-reserviste.css', array(), '1.0', 'all');
+    wp_register_style('evenement-reserviste', get_template_directory_uri() . '/custom-styles/evenement-reserviste.css', array(), '1.0', 'all');
     wp_enqueue_style('evenement-reserviste');
 
-    wp_register_style('style-reserviste', get_template_directory_uri() . '/style-reserviste.css', array(), '1.0', 'all');
+    wp_register_style('style-reserviste', get_template_directory_uri() . '/custom-styles/style-reserviste.css', array(), '1.0', 'all');
     wp_enqueue_style('style-reserviste');
 
-    wp_register_style('monsuperstyle', get_template_directory_uri() . '/monsuperstyle.css', array(), '1.0', 'all');
+    wp_register_style('monsuperstyle', get_template_directory_uri() . '/custom-styles/monsuperstyle.css', array(), '1.0', 'all');
     wp_enqueue_style('monsuperstyle');
 
     wp_register_style('home', get_template_directory_uri() . '/custom-styles/home.css', array(), '1.0', 'all');
