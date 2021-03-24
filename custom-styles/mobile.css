@@ -382,29 +382,6 @@
         width: 40%;
     }
 
-    #event {
-        margin-top: 8vh;
-    }
-
-    #event h2 {
-        font-size: 1em;
-    }
-
-    #event .grille ul {
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 25vh 25vh 25vh 25vh 25vh 25vh;
-        grid-column-gap: 10%;
-
-    }
-
-    #event .article .vide {
-        height: 9vh;
-    }
-
-    #event .entete p {
-        width: 90%;
-        margin-left: 20%;
-    }
 
     .detail {
         width: 70%;
@@ -647,18 +624,6 @@
         height: 220vh;
     }
 
-    #articlType h2 {
-        font-size: 1em;
-        margin-top: 8vh;
-    }
-
-    #articlType p {
-        width: 90%;
-    }
-
-    #articlType {
-        height: 200vh;
-    }
 }
 
 @media screen and (min-width: 930px) {
