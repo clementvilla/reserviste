@@ -1,4 +1,63 @@
-/* Articles */
+
+/*////////////////////////////////////////////////////////////Haut de page//////////////////////////////////////////////////////////////////*/
+
+
+.accueil > .slogan { /*grille */
+    display: grid;
+    grid-template: 1fr 5fr 5fr 1fr 1fr 1fr / 1fr 5fr 4fr 6fr;
+    height: 85vh;
+    width: 100vw;
+    background-image: url(".../images/fond-accueil");
+    background-repeat: no-repeat;
+
+}
+
+.accueil > .slogan > img {
+    position: relative;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+.accueil > .slogan > h1 { /*position h1 ordi */
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 40px;
+}
+
+.accueil > .slogan > h3 { /*position h3 ordi */
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding-top: 70px;
+    font-size: 30px;
+}
+
+.accueil > .slogan > p { /*position p ordi */
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    padding-top: 250px;
+}
+
+.accueil > .slogan > .boutoninscrire { /*position le bouton s'inscrire */
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+/*///////////////////////////////////////////////////////////// Articles ////////////////////////////////////////////////////////////////////////*/
 
 .articles-preview {
     padding: 0 5%;
