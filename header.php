@@ -31,12 +31,22 @@
 
     <header>
 
+    <div>
+        <a href=<?php echo home_url() . "/accueil" ?>>
+            <figure>
+                <img alt="logo header"
+                     src= "<?php echo get_bloginfo('template_directory')?>/images/images-galerie/logo-header.png">
+            </figure>
+        </a>
+
         <?php
         wp_nav_menu(array(
             'theme_location' => 'menu-1'
         )); ?>
+    </div>
 
-        <div class="menu-content">
+
+ <!--       <div class="menu-content">
             <section class="menu">
                 <label class="open-menu-all" for="open-menu-all">
                     <input class="input-menu-all" id="open-menu-all" type="checkbox" name="menu-open"/>
@@ -48,14 +58,8 @@
 
                     <ul class="list-menu">
 
-                        <a href=<?php echo home_url() . "/accueil" ?>>
 
-                            <figure>
-                                <img alt="logo header"
-                                     src= <?php echo home_url() . "/wp-content/themes/reserviste-montbeliard/images/images-galerie/logo-header.png" ?>>
 
-                            </figure>
-                        </a>
                         <li class="item-menu">
                             <a href="#" class="link-menu">Vie Associative</a>
                             <ul class="sous">
@@ -119,7 +123,7 @@
 
 
             </section>
-        </div>
+        </div>-->
 
 
     </header>

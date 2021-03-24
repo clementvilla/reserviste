@@ -121,55 +121,44 @@ add_action( 'widgets_init', '_s_widgets_init' );
  */
 function _s_scripts() {
 	wp_enqueue_style( '_s-style', get_stylesheet_uri() );
-	wp_enqueue_style( '_monsuperstyle', get_template_directory_uri().'/monsuperstyle.css' );
-	wp_enqueue_style( '_style-reserviste', get_template_directory_uri().'/style-reserviste.css' );
 
-	wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+    wp_enqueue_style( '_menu-reserviste', get_template_directory_uri().'/custom-styles/menu-reserviste.css');
 
-	wp_enqueue_script( '_s-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+    wp_register_style('mobile', get_template_directory_uri() . '/custom-styles/mobile.css', array(), '1.0', 'all');
+    wp_enqueue_style('mobile');
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+    wp_register_style('style-typo', get_template_directory_uri() . '/custom-styles/style-typo.css', array(), '1.0', 'all');
+    wp_enqueue_style('style-typo');
+
+    wp_register_style('animation', get_template_directory_uri() . '/custom-styles/animation.css', array(), '1.0', 'all');
+    wp_enqueue_style('animation');
+
+    wp_register_style('evenement-reserviste', get_template_directory_uri() . '/custom-styles/evenement-reserviste.css', array(), '1.0', 'all');
+    wp_enqueue_style('evenement-reserviste');
+
+    wp_register_style('style-reserviste', get_template_directory_uri() . '/custom-styles/style-reserviste.css', array(), '1.0', 'all');
+    wp_enqueue_style('style-reserviste');
+
+    wp_register_style('monsuperstyle', get_template_directory_uri() . '/custom-styles/monsuperstyle.css', array(), '1.0', 'all');
+    wp_enqueue_style('monsuperstyle');
+
+    wp_register_style('home', get_template_directory_uri() . '/custom-styles/home.css', array(), '1.0', 'all');
+	wp_enqueue_style('home');
+
+    /*Les scripts*/
+
+    wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
+    wp_enqueue_script( '_s-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
-add_filter('stylesheet_uri', 'gkp_stylesheet_uri', 10, 2);
-function gkp_stylesheet_uri($stylesheet_uri, $stylesheet_dir_uri) {
 
-    // On change le nom du fichier
-    return $stylesheet_dir_uri.'/style-reserviste.css';
-
-}
-
-add_action('wp_enqueue_scripts', 'gkp_insert_css_in_head');
-function gkp_insert_css_in_head() {
-    // On ajoute le css general du theme
-    wp_register_style('mobile', get_template_directory_uri() . '/mobile.css', array(), '1.0', 'all');
-    wp_enqueue_style('mobile');
-
-    wp_register_style('style-typo', get_template_directory_uri() . '/style-typo.css', array(), '1.0', 'all');
-    wp_enqueue_style('style-typo');
-
-    wp_register_style('animation', get_template_directory_uri() . '/animation.css', array(), '1.0', 'all');
-    wp_enqueue_style('animation');
-
-    wp_register_style('style-reserviste', get_template_directory_uri() . '/style-reserviste.css', array(), '1.0', 'all');
-	wp_enqueue_style('style-reserviste');
-	
-	wp_register_style('lesuperstyledelaura', get_template_directory_uri() . '/lesuperstyledelaura.css', array(), '1.0', 'all');
-	wp_enqueue_style('lesuperstyledelaura');
-
-	wp_register_style('lautrestyledecharlotte', get_template_directory_uri() . '/lautrestyledecharlotte.css', array(), '1.0', 'all');
-	wp_enqueue_style('lautrestyledecharlotte');
-
-	wp_register_style('monsuperstyle', get_template_directory_uri() . '/monsuperstyle.css', array(), '1.0', 'all');
-	wp_enqueue_style('monsuperstyle');
-
-	wp_register_style('home', get_template_directory_uri() . '/custom-styles/home.css', array(), '1.0', 'all');
-	wp_enqueue_style('home');
-
-}
 
 
 
