@@ -8,7 +8,7 @@ get_header();
 while (have_posts()) :the_post(); ?>
 
 
-    <main id="articlType">
+    <main id="articlType" class="header-correction">
 
         <h2><?php the_title(); ?></h2>
         <img src=<?php the_field("image-article") ?> >
