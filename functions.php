@@ -145,6 +145,9 @@ function _s_scripts() {
     wp_register_style('home', get_template_directory_uri() . '/custom-styles/home.css', array(), '1.0', 'all');
 	wp_enqueue_style('home');
 
+    wp_register_style('liste-articles', get_template_directory_uri() . '/custom-styles/liste-articles.css', array(), '1.0', 'all');
+    wp_enqueue_style('liste-articles');
+
     /*Les scripts*/
 
     wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
