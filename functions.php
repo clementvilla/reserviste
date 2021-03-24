@@ -142,6 +142,9 @@ function _s_scripts() {
     wp_register_style('monsuperstyle', get_template_directory_uri() . '/monsuperstyle.css', array(), '1.0', 'all');
     wp_enqueue_style('monsuperstyle');
 
+    wp_register_style('home', get_template_directory_uri() . '/custom-styles/home.css', array(), '1.0', 'all');
+	wp_enqueue_style('home');
+
     /*Les scripts*/
 
     wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
