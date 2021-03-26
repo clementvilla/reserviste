@@ -7,9 +7,12 @@
     grid-template: 1fr 5fr 5fr 1fr 1fr 1fr / 1fr 5fr 4fr 6fr;
     height: 85vh;
     width: 100vw;
-    background-image: url(".../images/fond-accueil");
-    background-repeat: no-repeat;
+}
 
+.accueil
+{
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .accueil > .slogan > img {

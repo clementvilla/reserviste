@@ -160,6 +160,9 @@ function _s_scripts() {
     wp_register_style('histoire', get_template_directory_uri() . '/custom-styles/histoire.css', array(), '1.0', 'all');
     wp_enqueue_style('histoire');
 
+    wp_register_style('dessins', get_template_directory_uri() . '/custom-styles/dessins.css', array(), '1.0', 'all');
+    wp_enqueue_style('dessins');
+
     /*Les scripts*/
 
     wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

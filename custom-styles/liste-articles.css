@@ -104,3 +104,8 @@
 {
     text-align: center;
 }
+
+#event a
+{
+    text-decoration: none;
+}
