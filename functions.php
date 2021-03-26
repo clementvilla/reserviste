@@ -45,7 +45,11 @@ if ( ! function_exists( '_s_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', '_s' ),
-		) );
+            'menu-2' => esc_html__( 'Footer', '_s' ),
+            'menu-3' => esc_html__( 'Footer-1', '_s' ),
+            'menu-4' => esc_html__( 'Footer-2', '_s' ),
+            'menu-5' => esc_html__( 'Footer-image', '_s' ),
+        ) );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -163,6 +167,9 @@ function _s_scripts() {
     wp_register_style('dessins', get_template_directory_uri() . '/custom-styles/dessins.css', array(), '1.0', 'all');
     wp_enqueue_style('dessins');
 
+    wp_register_style('footer-reserviste', get_template_directory_uri() . '/custom-styles/footer-reserviste.css', array(), '1.0', 'all');
+    wp_enqueue_style('footer-reserviste');
+
     /*Les scripts*/
 
     wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -214,3 +221,24 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/* Test de widget footer */
+function widget_registration($name, $id, $description,$beforeWidget, $afterWidget, $beforeTitle, $afterTitle){
+    register_sidebar( array(
+        'name' => $name,
+        'id' => $id,
+        'description' => $description,
+        'before_widget' => $beforeWidget,
+        'after_widget' => $afterWidget,
+        'before_title' => $beforeTitle,
+        'after_title' => $afterTitle,
+    ));
+}
+
+function multiple_widget_init(){
+    widget_registration('Footer widget 1', 'footer-sidebar-1', 'test-1', '', '', '', '');
+    //widget_registration('Footer widget 2', 'footer-sidebar-2', 'test-2', '', '', '', '');
+    // ETC...
+}
+
+add_action('widgets_init', 'multiple_widget_init');
