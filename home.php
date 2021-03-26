@@ -27,11 +27,11 @@ get_header();
 <!-- ARTICLES -->
 
 <div class="wp-block-columns articles-preview">
-    <?php 
+    <?php
        // the query
        $the_query = new WP_Query( array(
           'posts_per_page' => 3,
-       )); 
+       ));
     ?>
 
     <?php if ( $the_query->have_posts() ) : ?>
@@ -48,7 +48,7 @@ get_header();
                     <a class="wp-block-button__link" href="<?= the_permalink();?>">Lire la suite</a>
                 </div>
             </div>
-            
+
         </div>
 
       <?php endwhile; ?>
@@ -61,41 +61,11 @@ get_header();
 
 <!--Carousel -->
 
-<div class="carousel">
-    <h1>L'association en images</h1>
-    <div class="carousel-inner">
-        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-        <div class="carousel-item">
-            <img src="<?php echo get_bloginfo('template_directory')?>/images/drapeau-association.jpg">
-        </div>
-        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item">
-            <img src="<?php echo get_bloginfo('template_directory')?>/images/membre.jpg">
-        </div>
-        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item">
-            <img src="<?php echo get_bloginfo('template_directory')?>/images/images-galerie/lecture.jpg">
-        </div>
-        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-        <label for="carousel-2" class="carousel-control next control-1">›</label>
-        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-        <label for="carousel-3" class="carousel-control next control-2">›</label>
-        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-        <label for="carousel-1" class="carousel-control next control-3">›</label>
+<h1 style="margin-left: 5%; margin-top: 10%;">L'association en images</h1>
 
-        <ol class="carousel-indicators">
-            <li>
-                <label for="carousel-1" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-2" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-3" class="carousel-bullet">•</label>
-            </li>
-        </ol>
-    </div>
-</div>
+<?php
+echo do_shortcode('[smartslider3 slider="2"]');
+?>
 
 
 
