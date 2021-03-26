@@ -2,27 +2,21 @@
 
 header {
     width: 100%;
-    height: 15vh;
     margin: 0;
     z-index: 999;
     display: flex;
     position: fixed;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header > nav > ul {
     list-style-type: none;
 }
 
-/*header > a > img {
-    width: 85px;
-    height: auto;
-    float: left;
-    flex: 1;
-    margin-top: 8px;
-}*/
-
 header div.menu-menu-container {
-    height: 15vh;
     width: 100vw;
     background-color: black;
 }
@@ -43,11 +37,17 @@ header figure img {
     height: 45px;
 }
 
-.header {
+header {
     display: inline-block;
 }
 
+header li {
+    margin: 0;
+}
 
+header li > ul {
+    margin: 0;
+}
 
 @media (min-width: 991px) {
 
@@ -63,7 +63,7 @@ header figure img {
     }
 
     .menu li a {
-        padding: 0 15px;
+        padding: 0 10px;
         color: white;
         transition: .4s;
         cursor: pointer;
@@ -84,6 +84,10 @@ header figure img {
     width: 45px;
     height: 45px;
     flex-shrink: 0;
+}
+
+header a {
+    line-height: 38px;
 }
 
 .navegacao-mobile {
@@ -114,10 +118,9 @@ header figure img {
 ul#menu-menu.menu {
     display: none;
     width: 100%;
-    /*background: black; /*barre de menu*/
     box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
     position: relative;
-    top: 0;
+    /*top: 0;*/
 }
 
 ul#menu-menu.menu > img {
@@ -137,13 +140,9 @@ ul#menu-menu.menu > img:nth-child(1) {
 /*elements avec .menu-item dedans*/
 
 
-.menu-item {
-    flex: auto;
-}
 
-.menu-item /*.link-menu*/ /*li a*/ { /*menu carré*/
-    padding: 15px;
-    color: black;
+.menu-item {
+    padding: 10px;
     display: block;
     transition: .4s;
     cursor: pointer;
@@ -153,6 +152,24 @@ ul#menu-menu.menu > img:nth-child(1) {
 
 
 
+ul li .sub-menu{
+    display: none;
+}
+
+ul li:hover .sub-menu {
+    display: block;
+}
+
+ul li:hover header {
+    background-color: transparent;
+}
+
+/* test pour aligner sous menu
+.sub-menu {
+    background-color: yellow;
+}
+*/
+
 
 
 /*ul li {
@@ -160,12 +177,6 @@ ul#menu-menu.menu > img:nth-child(1) {
     width: 100%;
     position: relative;
 }*/
-
-ul > li > a {
-    text-decoration: none;
-    color: black;
-    margin-left: 20px;
-}
 
 /*.sub-menu {
     display: none;
@@ -175,38 +186,33 @@ ul > li > a {
     display: block;
 }*/
 
-ul li .sub-menu{
-display: none;
-}
+/*
+.menu-item {
+    flex: auto;
+}*/
 
-ul li:hover .sub-menu {
-    display: block;
-}
+
 
 /*elements avec submenu dedans*/
 
 
-.submenu { /*pour cacher les sous menu avec display none*/
-    display: none;
-    box-shadow: 0 1px 2px #CCC;
+.submenu li {
     position: absolute;
-    width: 100%;
-    z-index: 999;
     background-color: white;
 }
 
-.input-menu-all {
+/*.input-menu-all {
     display: none !important;
-}
+}*/
 
 
 
-nav {
+/*nav {
     width: 100%;
     height: 15vh;
-}
+}*/
 
-
+/*
 svg {
     width: 15%;
     height: auto;
@@ -214,6 +220,7 @@ svg {
 
 /*pour la nav*/
 
+/*
 nav > ul {
     width: 100%;
     height: 15vh;
@@ -229,9 +236,10 @@ nav > ul > li {
     padding: 14px 20px 14px 20px;
     position: relative;
     border-right: white solid 2px;
-}
+}*/
 
-li > ul.submenu {
+
+li ul.submenu {
     list-style-type: none;
     padding: 10px;
     width: 100%;
@@ -243,7 +251,6 @@ li > ul.submenu {
 
 li:hover .submenu {
     display: block;
-
 }
 
 .submenu li {
@@ -255,8 +262,9 @@ nav > ul > li > a > img, nav > ul > li > img {
     display: none
 }
 
+/*
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
+}*/
