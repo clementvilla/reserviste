@@ -8,7 +8,7 @@ Template Name: pageDessin
 get_header();
 ?>
 
-    <main id="dessin">
+    <main id="dessin" class="header-correction">
         <?php the_content() ?>
         <div class="liste">
 

@@ -8,18 +8,18 @@ Template Name: pageHistoire
 get_header();
 ?>
 
-<div  class="sengager" style=background-image:url(<?php echo get_bloginfo('template_directory')?>/images/fond-engager.jpg);>
-    <section class="slogan">
-        <h1>L'HISTOIRE DE L'ASSOCIATION</h1>
 
-        <img alt="logo header" src=<?php echo get_bloginfo('template_directory')?>/images/images-galerie/logo-titre.png>
-    </section>
-</div>
+<main id="histoire" class="header-correction">
 
+    <div  class="sengager" style=background-image:url(<?php echo get_bloginfo('template_directory')?>/images/fond-engager.jpg);>
+        <section class="slogan">
+            <h1>L'HISTOIRE DE L'ASSOCIATION</h1>
 
-<main id="histoire">
+            <img alt="logo header" src=<?php echo get_bloginfo('template_directory')?>/images/images-galerie/logo-titre.png>
+        </section>
+    </div>
 
-        <?php the_content() ?>
+    <?php the_content() ?>
 
     </main>
 

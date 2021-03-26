@@ -151,6 +151,15 @@ function _s_scripts() {
     wp_register_style('article', get_template_directory_uri() . '/custom-styles/article.css', array(), '1.0', 'all');
     wp_enqueue_style('article');
 
+    wp_register_style('galerie', get_template_directory_uri() . '/custom-styles/galerie.css', array(), '1.0', 'all');
+    wp_enqueue_style('galerie');
+
+    wp_register_style('calendrier', get_template_directory_uri() . '/custom-styles/calendrier.css', array(), '1.0', 'all');
+    wp_enqueue_style('calendrier');
+
+    wp_register_style('histoire', get_template_directory_uri() . '/custom-styles/histoire.css', array(), '1.0', 'all');
+    wp_enqueue_style('histoire');
+
     /*Les scripts*/
 
     wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

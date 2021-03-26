@@ -8,7 +8,8 @@
 
 #articlType
 {
-    padding: 0 10vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
 }
 
 #articlType .signature
