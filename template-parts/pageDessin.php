@@ -9,6 +9,7 @@ get_header();
 ?>
 
     <main id="dessin" class="header-correction">
+
         <?php the_content() ?>
         <div class="liste">
 

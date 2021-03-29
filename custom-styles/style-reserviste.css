@@ -1,7 +1,14 @@
+
+/*//////////FICHIER DE STYLES GÉNÉRAUX//////////*/
+
 @import url('https://fonts.googleapis.com/css?family=Spectral+SC');
 
 main {
     height: auto;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html {
@@ -10,450 +17,27 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
     width: 100%;
+    font-family: 'Rubik', sans-serif;
     height: auto;
     overflow-x: hidden;
-}
-
-
-
-
-.reseau {
-    float: right;
-    padding-right: 5%;
-}
-
-/*pour la page d'accueil*/
-
-
-/*
-
-#img-accueil {
-    width: 100%;
-    height: 85vh;
-    background-image: url("images/fond-accueil.jpeg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-
-    overflow: hidden;
-}
-*/
-
-#img-accueil h1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    z-index: 1;
-
-}
-
-/*.img {
-    width: 100%;
-    height: 85vh;
-    background-image: url("images/fond-accueil.jpeg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-
-}*/
-
-#association {
-    width: 100%;
-    height: 110vh;
-}
-
-/*#index #association img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5vh;
-    width: 20vw;
-    height: auto;
-
-}*/
-
-
-#association div p, h3 {
-    display: inline-block;
-}
-
-
-#association div {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5vh;
-    width: 100%;
-    text-align: center;
-    position: relative;
-}
-
-
-#association div:last-child {
-    width: 100%;
-}
-
-#actu {
-    width: 100%;
-    height: 100vh;
-    background-color: #404B49;
-}
-
-#actu div.button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    width: 24%;
-    text-align: center;
-    top: 20vh;
-
-}
-
-
-.info:first-of-type {
-    float: left;
-}
-
-.info:last-of-type {
-    float: right;
-}
-
-#galerie {
-    width: 100%;
-    height: 120vh;
-}
-
-#galerie .grille ul {
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 200px 150px 150px;
-    grid-column-gap: 6.666%;
-    grid-row-gap: 60px;
-    width: 90%;
-    height: 100vh;
-    justify-self: center;
-    text-align: center;
-    padding-top: 8vh;
-    list-style-type: none;
-    padding-left: 0;
-
-}
-
-#galerie .grille ul img {
-    width: auto;
-    height: 20vh;
-    transition: .5s;
-
-}
-
-#galerie .grille ul img:hover {
-    transform: scale(1.2);
-    transition: .5s;
-}
-
-#index #galerie .grille div {
-    width: 200px;
-    height: 150px;
-    overflow: hidden;
-}
-
-#index #galerie .grille {
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 200px 150px 150px;
-    grid-column-gap: 6.666%;
-    grid-row-gap: 60px;
-    width: 90%;
-    height: 100vh;
-    justify-self: center;
-    text-align: center;
-    padding-top: 8vh;
-    list-style-type: none;
-    padding-left: 0;
-
-}
-
-#index #galerie .grille img {
-    width: auto;
-    height: 20vh;
-
-}
-
-#index .grille div {
-    width: 200px;
-    height: 150px;
-    overflow: hidden;
-}
-
-#donation {
-    width: 100%;
-    height: 100vh;
-    background-color: #404B49;
-    padding-top: 8vh;
-}
-
-#donation div {
-    display: block;
-    width: 80%;
-    height: 50vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10vh;
-}
-
-#donation .button {
-    width: 100%;
-    height: 25vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-#form {
-    width: 100%;
-    height: 130vh;
-    background-color: #9F875C;
-
-}
-
-#form .grille {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 400px;
-    grid-row-gap: 25px;
-    grid-column-gap: 30px;
-    width: 80%;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-top: 20vh;
-}
-
-#form ul img {
-    width: 25px;
-    height: auto;
-    padding: 0 5px 0 0;
-    position: relative;
-    top: 1.4vh;
-
-}
-
-/*pour la page s'engager*/
-
-#engager .formulaire {
-    width: 100%;
-    height: 115vh;
-    background-color: #aaaaaa;
-}
-
-#engager .formulaire div.haut {
-    display: grid;
-    width: 80%;
-    height: 50vh;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-
-}
-
-#engager .formulaire label:last-of-type input, textarea {
-    float: right;
-    width: 80%;
-    height: 8vh;
-    margin-right: 20%;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
-
-#engager .formulaire div.bas {
-    display: grid;
-    width: 80%;
-    height: 35vh;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: 33.333% 33.333% 33.333%;
-    grid-template-rows: auto;
-
-}
-
-
-#articlType {
-    width: 100%;
-    height: auto;
-}
-
-#articlType img {
-
-    display: block;
-    margin: 5vh auto 5vh auto;
-    height: auto;
-    border-radius: 10px;
-
-}
-
-#histoire {
-    width: 100%;
-    height: auto;
-}
-
-#histoire .date {
-    width: 100%;
-    height: 35vh;
-    background-color: #9F875C;
-}
-
-#histoire .date ul {
-    width: 100%;
-    height: 10vh;
-    display: block;
-    margin-left: 2%;
-    margin-right: auto;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-#histoire .date > div > ul > li {
-    float: left;
-    margin: 0 5% 0 5%;
-    width: 8%;
-
-}
-
-#histoire ul {
-    width: 100%;
-    margin-top: 10vh;
-    margin-left: 30%;
-    color: #404B49;
-}
-
-#participer {
-    width: 100%;
-    height: 220vh;
-}
-
-#participer .participation {
-    width: 100%;
-    height: 100vh;
-
-}
-
-#participer .donner {
-    width: 100%;
-    height: 100vh;
-    background-color: #404B49;
-}
-
-#participer #donation {
-    height: 112vh;
-}
-
-/*pour la page présentattion de l'association*/
-
-main#association {
-    width: 100%;
-    height: 420vh;
-}
-
-main#association > div {
-
-    display: grid;
-    grid-template-columns: 33.333% 33.333% 33.333%;
-    grid-template-rows: 25vh;
-    width: 100%;
-    height: auto;
-}
-
-main#association img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5vh;
-    width: 50%;
-    height: auto;
-}
-
-main#galerie {
-    height: auto;
-}
-
-#calendrier {
-    width: 100%;
-    height: auto;
-}
-
-.detail {
-    width: 30%;
-    height: 30vh;
-    border: 2px solid #9F875C;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-}
-
-.rechercheEvt {
-    width: 100%;
-    height: 25vh;
-    background-color: #9F875C;
-}
-
-.rechercheEvt .grille {
-    display: grid;
-    width: 80%;
-    height: auto;
-    grid-template-columns: 21.25% 21.25% 21.25% 21.25%;
-    grid-column-gap: 5%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 8vh;
-}
-
-.container-calendar {
-    width: 100%;
-    height: 200vh;
-}
-
-
-p.wp-caption-text {
-    color: black;
-}
-
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0;
-    margin: 0 !important;
     background: white;
-    font-family: 'Rubik', sans-serif;
 }
 
-
-
-
-
-
-
-
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 
 /*///////////////////////////////////////////////////////NOUVEAUX STYLES//////////////////////////////////////////////////////*/
 
-/*////////////////////General/////////////////////*/
 
-.header-correction
+/*///////////////////////////////////////////////////////////General//////////////////////////////////////////////////////////*/
+
+.header-correction          /*Correction du haut de page pour que le header ne monte pas sur le contenu*/
 {
     padding-top: 7vh;
 }
@@ -463,3 +47,36 @@ h2
     color: black;
 }
 
+.bodyPadding                /* Padding sur les pages pour décoller le contenu des bords*/
+{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/*//////////////////////////////////////////////////////banière///////////////////////////////////////////////////*/
+
+/*Banière de titre visible sur la plupart des pages. La banière de la page home est dans home.css*/
+
+.baniere > .slogan {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 5fr 3fr 5fr;
+    height: 40vh;
+    width: 100vw;
+}
+
+.baniere {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.baniere > .slogan > h1 {
+    font-size: 50px;
+    font-weight: normal;
+    grid-column-start: 2;
+}
+
+.baniere > .slogan > img {
+    grid-column-start: 4;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
