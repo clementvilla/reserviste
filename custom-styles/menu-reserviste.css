@@ -19,7 +19,7 @@ header > nav > ul {
 header div.menu-menu-container {
     width: 100vw;
     background-color: black;
-    height: 7vh;
+    height: 50px;
 }
 
 header figure {
@@ -163,35 +163,6 @@ ul li:hover .sub-menu {
 ul li:hover header {
     background-color: transparent;
 }
-
-/* test pour aligner sous menu
-.sub-menu {
-    background-color: yellow;
-}
-*/
-
-
-
-/*ul li {
-    float: left;
-    width: 100%;
-    position: relative;
-}*/
-
-/*.sub-menu {
-    display: none;
-}
-
-.sub-menu:hover {
-    display: block;
-}*/
-
-/*
-.menu-item {
-    flex: auto;
-}*/
-
-
 
 /*elements avec submenu dedans*/
 

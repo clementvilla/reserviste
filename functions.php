@@ -107,7 +107,7 @@ add_action( 'after_setup_theme', '_s_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function _s_widgets_init() {
+/*function _s_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', '_s' ),
 		'id'            => 'sidebar-1',
@@ -118,8 +118,24 @@ function _s_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', '_s_widgets_init' );
+add_action( 'widgets_init', '_s_widgets_init' );*/
 
+function header_widgets_init() {
+
+    register_sidebar( array(
+
+        'name' => 'Ma nouvelle zone de widget',
+        'id' => 'new-widget-area',
+        'before_widget' => '<div class="nwa-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="nwa-title">',
+        'after_title' => '</h2>',
+    ) );
+}
+
+add_action( 'widgets_init', 'header_widgets_init' );
+
+  
 /**
  * Enqueue scripts and styles.
  */
