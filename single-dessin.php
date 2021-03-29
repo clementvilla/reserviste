@@ -1,6 +1,5 @@
 <?php
 
-get_header();
 
 $args = array(
     'post_type' => 'dessin'
@@ -120,4 +119,4 @@ while (have_posts()) : the_post(); ?>
 
 
 <?php
-get_footer();
+

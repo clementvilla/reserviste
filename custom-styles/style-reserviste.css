@@ -17,46 +17,6 @@ body {
 
 
 
-/*footer*/
-
-footer {
-    width: 100%;
-    height: 20vh;
-    background-color: #404B49;
-    position: relative;
-    margin: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-}
-
-footer div {
-    width: 33.333%;
-
-}
-
-footer div:first-child img {
-    width: 79px;
-    height: auto;
-    margin-top: 5vh;
-}
-
-footer div:last-child {
-    display: inline-block;
-    width: 33.333%;
-
-}
-
-footer div:last-child img {
-    width: 20%;
-    height: auto;
-}
-
-footer div:last-child img:first-child {
-    width: 20%;
-    height: auto;
-    background-image: url("../images/images-menu/facebook.png");
-}
 
 .reseau {
     float: right;
@@ -396,50 +356,6 @@ footer div:last-child img:first-child {
     height: 112vh;
 }
 
-#dessin {
-    width: 100%;
-    height: auto;
-
-}
-
-#dessin .liste {
-    margin-top: 20vh;
-    width: 100%;
-    height: 150vh;
-}
-
-#dessin .grille ul {
-    width: 90%;
-    height: 140vh;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 95vh;
-    grid-column-gap: 10%;
-    grid-row-gap: 20vh;
-    padding: 0;
-    list-style-type: none;
-    margin-bottom: 20vh;
-    border-bottom: 3px solid #9F875C;
-
-}
-
-#dessin .grille {
-    width: 100%;
-    height: 150vh;
-}
-
-#dessin .grille ul > li > img {
-    width: 100%;
-    height: auto;
-}
-
-#dessin .grille ul > li {
-
-    text-align: center
-}
-
 /*pour la page présentattion de l'association*/
 
 main#association {
@@ -463,54 +379,6 @@ main#association img {
     margin-bottom: 5vh;
     width: 50%;
     height: auto;
-}
-
-#galerie .recherche {
-    background-color: #9F875C;
-    width: 100%;
-    height: 45vh;
-    margin-top: 10vh;
-}
-
-#galerie .grilleButton {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 25% 40% 25%;
-    grid-column-gap: 5%;
-    grid-template-rows: 25vh;
-    text-align: center;
-
-}
-
-.grilleImage ul {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 30vh 30vh 30vh 30vh;
-    grid-column-gap: 5%;
-    grid-row-gap: 25vh;
-    height: auto;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    list-style-type: none;
-}
-
-.grilleImage ul > li {
-}
-
-.grilleImage li img {
-    width: 100%;
-    height: auto;
-}
-
-#galerie .image, #dessin .image {
-    width: 100%;
-    height: auto;
-    margin-top: 18vh;
-
 }
 
 main#galerie {
@@ -587,7 +455,7 @@ body {
 
 .header-correction
 {
-    padding-top: 15vh;
+    padding-top: 7vh;
 }
 
 h2

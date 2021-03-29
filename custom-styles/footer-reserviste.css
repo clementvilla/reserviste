@@ -1,0 +1,96 @@
+footer.piedpage > .contenu3 {
+    display: grid;
+    grid-template: 1fr 1fr/ 2fr 3fr 3fr 4fr;
+    height: 22vh;
+    width: 100vw;
+    background-color: black;
+}
+
+footer ul {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    list-style: none;
+}
+
+footer .menu-item a img {
+    width: 100px;
+    height: 93px;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul.sub-menu {
+    display: block;
+}
+
+footer ul.sub-menu li {
+    position: relative;
+    margin-top: 10px;
+}
+
+/*
+ul li .sub-menu{
+    display: none;
+    background-color: black;
+}*/
+
+/*
+@media screen and (max-width: 55em) {
+    /* logo reserv responsive tel
+    footer.piedpage > .contenu3 > ul {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 55em) {
+    /* logo reserv responsive tel
+    footer.piedpage > .contenu3 > img {
+        height: 50px;
+    }
+}*/
+
+/*footer
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #404B49;
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+}
+
+footer div {
+    width: 33.333%;
+}
+
+footer div:first-child img {
+    width: 79px;
+    height: auto;
+    margin-top: 5vh;
+}
+
+footer div:last-child {
+    display: inline-block;
+    width: 33.333%;
+
+}
+
+footer div:last-child img {
+    width: 20%;
+    height: auto;
+}
+
+footer div:last-child img:first-child {
+    width: 20%;
+    height: auto;
+    background-image: url("../images/images-menu/facebook.png");
+}

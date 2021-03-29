@@ -19,6 +19,7 @@ header > nav > ul {
 header div.menu-menu-container {
     width: 100vw;
     background-color: black;
+    height: 7vh;
 }
 
 header figure {
@@ -55,7 +56,6 @@ header li > ul {
         display: flex !important;
         justify-content: space-between;
         width: 100%;
-        box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
     }
 
     .menu-item {
@@ -118,7 +118,6 @@ header a {
 ul#menu-menu.menu {
     display: none;
     width: 100%;
-    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
     position: relative;
     /*top: 0;*/
 }
@@ -154,6 +153,7 @@ ul#menu-menu.menu > img:nth-child(1) {
 
 ul li .sub-menu{
     display: none;
+    background-color: black;
 }
 
 ul li:hover .sub-menu {

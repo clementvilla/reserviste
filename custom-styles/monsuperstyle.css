@@ -16,9 +16,6 @@ ul {
 }
 
 
-
-
-
 /* styles 3 parties*/
 
 .test {
@@ -283,51 +280,6 @@ ul {
 
 .carousel-bullet:hover {
     color: #aaaaaa;
-}
-
-
-/*------------------------------FOOTER------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-
-
-footer.piedpage > .contenu3 {
-    display: grid;
-    grid-template: 1fr 1fr/ 2fr 3fr 3fr 4fr;
-    height: 20vh;
-    width: 100vw;
-    background-color: black;
-}
-
-footer.piedpage > .contenu3 > ul > li > a {
-    color: white;
-    text-decoration: none;
-}
-
-footer.piedpage > .contenu3 > ul {
-    color: white;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-footer.piedpage > .contenu3 > img {
-    height: 100px;
-    margin-top: 20px;
-}
-
-@media screen and (max-width: 55em) {
-    /* logo reserv responsive tel*/
-    footer.piedpage > .contenu3 > ul {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 55em) {
-    /* logo reserv responsive tel*/
-    footer.piedpage > .contenu3 > img {
-        height: 50px;
-
-    }
 }
 
 

@@ -1,0 +1,53 @@
+
+#dessin h2
+{
+    text-align: center;
+}
+#dessin
+{
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+
+.grilleImage ul {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    grid-row-gap: 10vh;
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.grilleImage ul > li {
+}
+
+.grilleImage li img {
+    width: 100%;
+    height: auto;
+}
+
+
+#dessin {
+    width: 100%;
+    height: auto;
+
+}
+
+#dessin .liste {
+    margin-top: 10vh;
+}
+
+#dessin .grille ul > li > img {
+    width: 100%;
+    height: auto;
+}
+
+#dessin .grille ul > li {
+
+    text-align: center
+}

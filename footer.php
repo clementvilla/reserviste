@@ -11,66 +11,90 @@
 
 ?>
 
-</div><!-- #content -->
+<!-- ?php
+wp_nav_menu(array(
+    'theme_location' => 'menu-2'
+)); ?-->
 
-<footer class="piedpage">
+<div><!-- #content -->
 
-    <section class="contenu3">
+    <footer class="piedpage">
 
-    <img alt="logo header" src=<?php echo get_bloginfo('template_directory')?>/images/images-galerie/logo-titre.png>
-        <ul>
-            <li>
-                <a href="#">Association des réservistes <br> du pays de Montbéliard</a>
-            </li>
-            <li>
-                <a href="#">Adresse</a>
-            </li>
-            <li>
-                <a href="#">25200 Montbéliard</a>
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-                <a href="#">Téléphone</a>
-            </li>
-            <li>
-                <a href="#">Adresse mail</a>
-            </li>
-            <li>
-                <a href="#">Facebook</a>
-            </li>
-            <li>
-                <a href="#">Instagram</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
+        <section class="contenu3">
 
 
-        <ul>
-            <li>
-                <a href="#">Vie associative</a>
-            </li>
-            <li>
-                <a href="#">Actualités</a>
-            </li>
-            <li>
-                <a href="#">Production de l'association</a>
-            </li>
-            <li>
-                <a href="#">Découvir la garde</a>
-            </li>
-            <li>
-                <a href="#">S'engager</a>
-            </li>
-        </ul>
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'menu-5'
+            )); ?>
 
-    </section>
+            <!-- img alt="logo header" src=<?php echo get_bloginfo('template_directory') ?>/images/images-galerie/logo-titre.png -->
+
+            <!--<ul>
+                <li>
+                    <a href="#">Association des réservistes <br> du pays de Montbéliard</a>
+                </li>
+                <li>
+                    <a href="#">Adresse</a>
+                </li>
+                <li>
+                    <a href="#">25200 Montbéliard</a>
+                </li>
+            </ul>-->
+
+            <?php dynamic_sidebar( 'footer-sidebar-1' ); ?>
 
 
-</footer>
+            <!--?php
+            wp_nav_menu(array(
+                'theme_location' => 'menu-3'
+            )); ?-->
+
+            <!--<ul>
+                <li>
+                    <a href="#">Téléphone</a>
+                </li>
+                <li>
+                    <a href="#">Adresse mail</a>
+                </li>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <a href="#">Instagram</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>-->
+
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'menu-4'
+            )); ?>
+
+            <!--<ul>
+                <li>
+                    <a href="#">Vie associative</a>
+                </li>
+                <li>
+                    <a href="#">Actualités</a>
+                </li>
+                <li>
+                    <a href="#">Production de l'association</a>
+                </li>
+                <li>
+                    <a href="#">Découvir la garde</a>
+                </li>
+                <li>
+                    <a href="#">S'engager</a>
+                </li>
+            </ul>-->
+
+        </section>
+
+
+    </footer>
 
 </div><!-- #page -->
 
