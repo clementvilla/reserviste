@@ -28,8 +28,16 @@ wp_nav_menu(array(
                 'theme_location' => 'menu-5'
             )); ?>
 
-            <!-- img alt="logo header" src=<?php echo get_bloginfo('template_directory') ?>/images/images-galerie/logo-titre.png -->
+            <!-- img alt="logo header" src=< ?php echo get_bloginfo('template_directory') ?>/images/images-galerie/logo-titre.png -->
 
+            <!-- ajout de ma nouvelle widget area -->
+            <?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
+                <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'new-widget-area' ); ?>
+                </div>
+            <?php endif; ?>
+            <!-- fin nouvelle widget area -->
+            
             <!--<ul>
                 <li>
                     <a href="#">Association des réservistes <br> du pays de Montbéliard</a>
@@ -42,7 +50,8 @@ wp_nav_menu(array(
                 </li>
             </ul>-->
 
-            <?php dynamic_sidebar( 'footer-sidebar-1' ); ?>
+            <!-- ?php dynamic_sidebar( 'footer-sidebar-1' ); ?-->
+
 
 
             <!--?php
@@ -92,6 +101,7 @@ wp_nav_menu(array(
             </ul>-->
 
         </section>
+
 
 
     </footer>
