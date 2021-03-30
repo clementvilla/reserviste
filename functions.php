@@ -173,9 +173,6 @@ function _s_scripts() {
 
     wp_enqueue_style( '_menu-reserviste', get_template_directory_uri().'/custom-styles/menu-reserviste.css');
 
-    wp_register_style('mobile', get_template_directory_uri() . '/custom-styles/mobile.css', array(), '1.0', 'all');
-    wp_enqueue_style('mobile');
-
     wp_register_style('style-typo', get_template_directory_uri() . '/custom-styles/style-typo.css', array(), '1.0', 'all');
     wp_enqueue_style('style-typo');
 
@@ -187,9 +184,6 @@ function _s_scripts() {
 
     wp_register_style('style-reserviste', get_template_directory_uri() . '/custom-styles/style-reserviste.css', array(), '1.0', 'all');
     wp_enqueue_style('style-reserviste');
-
-    wp_register_style('monsuperstyle', get_template_directory_uri() . '/custom-styles/monsuperstyle.css', array(), '1.0', 'all');
-    wp_enqueue_style('monsuperstyle');
 
     wp_register_style('home', get_template_directory_uri() . '/custom-styles/home.css', array(), '1.0', 'all');
 	wp_enqueue_style('home');
