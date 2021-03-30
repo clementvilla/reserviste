@@ -33,3 +33,17 @@
 {
     margin: 1rem 0;
 }
+
+#articlType {
+    width: 100%;
+    height: auto;
+}
+
+#articlType img {
+
+    display: block;
+    margin: 5vh auto 5vh auto;
+    height: auto;
+    border-radius: 10px;
+
+}

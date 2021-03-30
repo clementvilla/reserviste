@@ -8,7 +8,7 @@ Template Name: pageCalendrier
 get_header();
 ?>
 
-<main id="calendrier">
+<main id="calendrier" class="header-correction">
 
    <?php the_content() ?>
 

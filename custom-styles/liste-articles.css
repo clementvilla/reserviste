@@ -1,29 +1,5 @@
 
 
-/*////////////////////////////////////////////////Baniere de titre///////////////////////////////////////////////////////*/
-
-.articleBanner
-{
-    margin-top: 20px;
-    background-repeat: no-repeat;
-}
-
-.articleBanner > .slogan {
-    display: grid;
-    grid-template: 1fr 1fr/ 1fr 5fr 3fr 5fr;
-    height: 28vh;
-    width: 100vw;
-}
-
-.articleBanner > .slogan > h1 {
-    font-size: 50px;
-    font-weight: normal;
-    grid-column-start: 2;
-}
-
-.articleBanner > .slogan > img {
-    grid-column-start: 4;
-}
 
 /*pour la page événements*/
 
@@ -33,7 +9,6 @@
 
 #event div.entete {
     width: 100%;
-    padding: 5vw;
 }
 
 #event div.liste {
@@ -61,7 +36,6 @@
 }
 
 #event .grille {
-    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -11,7 +11,7 @@ get_header();
 
 <main id="histoire" class="header-correction">
 
-    <div  class="sengager" style=background-image:url(<?php echo get_bloginfo('template_directory')?>/images/fond-engager.jpg);>
+    <div  class="baniere" style=background-image:url(<?php echo get_bloginfo('template_directory')?>/images/fond-engager.jpg);>
         <section class="slogan">
             <h1>L'HISTOIRE DE L'ASSOCIATION</h1>
 
