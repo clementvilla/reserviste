@@ -323,3 +323,7 @@ ul#menu-menu.menu > img:nth-child(1) {
     width: 70px;
 }
 
+.post,
+.page {
+    margin: 0 0 1.5em;
+}
