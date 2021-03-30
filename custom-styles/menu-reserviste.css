@@ -19,7 +19,7 @@ header > nav > ul {
 header div.menu-menu-container {
     width: 100vw;
     background-color: black;
-    height: 50px;
+    height: 65px;
 }
 
 header figure {
@@ -53,7 +53,8 @@ header li > ul {
 @media (min-width: 991px) {
 
     ul#menu-menu.menu {
-        display: flex !important;
+        display: grid !important;
+        grid-template: 100% / 10% 14.9% 14.3% 14.3% 14.3% 18% 14.3%;
         justify-content: space-between;
         width: 100%;
     }
@@ -84,6 +85,7 @@ header li > ul {
     width: 45px;
     height: 45px;
     flex-shrink: 0;
+    margin-left: 15px;
 }
 
 header a {

@@ -28,15 +28,15 @@ wp_nav_menu(array(
                 'theme_location' => 'menu-5'
             )); ?>
 
-            <!-- img alt="logo header" src=< ?php echo get_bloginfo('template_directory') ?>/images/images-galerie/logo-titre.png -->
 
             <!-- ajout de ma nouvelle widget area -->
-            <!--?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
+            <?php if ( is_active_sidebar( 'bill' ) ) : ?>
                 <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
-                    < ?php dynamic_sidebar( 'new-widget-area' ); ?>
+                    <?php dynamic_sidebar( 'bill' ); ?>
                 </div>
-            <:--?php endif; ? -->
+            <?php endif; ?>
             <!-- fin nouvelle widget area -->
+
 <!--
             < ?php dynamic_sidebar( 'new-widget-area' ); ?>
 -->
@@ -55,34 +55,36 @@ wp_nav_menu(array(
             <!-- ?php dynamic_sidebar( 'footer-sidebar-1' ); ?-->
 
 
+            <!-- ajout de ma nouvelle widget area -->
+            <?php if ( is_active_sidebar( 'bob' ) ) : ?>
+                <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'bob' ); ?>
+                </div>
+            <?php endif; ?>
+            <!-- fin nouvelle widget area -->
+
+
+            <!-- ?php
+            wp_nav_menu(array(
+                'theme_location' => 'menu-3'
+            )); ? -->
+
+
+
+            <!-- ajout de ma nouvelle widget area -->
+            <?php if ( is_active_sidebar( 'joe' ) ) : ?>
+                <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'joe' ); ?>
+                </div>
+            <?php endif; ?>
+            <!-- fin nouvelle widget area -->
+
+
 
             <!--?php
             wp_nav_menu(array(
-                'theme_location' => 'menu-3'
-            )); ?-->
-
-            <!--<ul>
-                <li>
-                    <a href="#">Téléphone</a>
-                </li>
-                <li>
-                    <a href="#">Adresse mail</a>
-                </li>
-                <li>
-                    <a href="#">Facebook</a>
-                </li>
-                <li>
-                    <a href="#">Instagram</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>-->
-
-            <?php
-            wp_nav_menu(array(
                 'theme_location' => 'menu-4'
-            )); ?>
+            )); ?-->
 
             <!--<ul>
                 <li>

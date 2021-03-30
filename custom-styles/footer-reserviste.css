@@ -1,8 +1,8 @@
 footer.piedpage > .contenu3 {
     display: grid;
-    grid-template: 1fr 1fr/ 2fr 3fr 3fr 4fr;
-    height: 22vh;
-    width: 100vw;
+    grid-template: 100%/ 15% 35% 25% 25%;
+    height: 250px;
+    width: 100%;
     background-color: black;
 }
 
@@ -25,14 +25,37 @@ footer a {
     text-decoration: none;
 }
 
-footer ul.sub-menu {
-    display: block;
+
+footer li {
+    padding: 3px;
 }
 
-footer ul.sub-menu li {
-    position: relative;
-    margin-top: 10px;
+footer .menu-item {
+    padding: 3px;
 }
+
+
+/*widget du footer (oui je sais ca s'appelle header alors que c'est un footer pas la peine de me crier dessus ;-) )*/
+/*nwa c'est new widget area*/
+
+h2.nwa-title {
+    color: white;
+}
+
+.nwa-header-widget {
+    padding: 0 10px;
+}
+
+.nwa-header-widget a {
+    text-decoration: none;
+    color: white;
+}
+
+.nwa-header-widget a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
 
 /*
 ul li .sub-menu{

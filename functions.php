@@ -107,9 +107,9 @@ add_action( 'after_setup_theme', '_s_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-/*function _s_widgets_init() {
+function _s_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', '_s' ),
+		'name'          => esc_html__( 'underscore', '_s' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', '_s' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -117,9 +117,38 @@ add_action( 'after_setup_theme', '_s_content_width', 0 );
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-}
-add_action( 'widgets_init', '_s_widgets_init' );*/
 
+    register_sidebar( array(
+        'name' => esc_html__( 'clement', '_s' ),
+        'id' => 'bill',
+        'before_widget' => '<div class="nwa-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="nwa-title">',
+        'after_title' => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => esc_html__( 'bob', '_s' ),
+        'id' => 'bob',
+        'before_widget' => '<div class="nwa-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="nwa-title">',
+        'after_title' => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => esc_html__( 'joe', '_s' ),
+        'id' => 'joe',
+        'before_widget' => '<div class="nwa-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="nwa-title">',
+        'after_title' => '</h2>',
+    ) );
+
+}
+add_action( 'widgets_init', '_s_widgets_init' );
+
+/*
 function header_widgets_init() {
 
     register_sidebar( array(
@@ -131,9 +160,9 @@ function header_widgets_init() {
         'before_title' => '<h2 class="nwa-title">',
         'after_title' => '</h2>',
     ) );
-}
+}*/
 
-add_action( 'widgets_init', 'header_widgets_init' );
+/*add_action( 'widgets_init', 'header_widgets_init' );*/
 
   
 /**
