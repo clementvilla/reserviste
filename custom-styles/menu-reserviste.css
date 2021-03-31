@@ -84,6 +84,11 @@ header li > ul {
         width: 14vw;
     }
 
+    #menu-menu>li>ul:last-child {
+        position: absolute;
+        width: 8vw;
+    }
+
     .navegacao-mobile {
         display: none !important;
     }
