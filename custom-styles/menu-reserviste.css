@@ -84,7 +84,7 @@ header li > ul {
         width: 14vw;
     }
 
-    #menu-menu>li>ul:last-child {
+    #menu-menu>li:last-of-type>ul {
         position: absolute;
         width: 8vw;
     }
