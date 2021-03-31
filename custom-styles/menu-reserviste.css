@@ -19,7 +19,6 @@ header > nav > ul {
 header div.menu-menu-container {
     width: 100vw;
     background-color: black;
-    height: 65px;
 }
 
 header figure {
@@ -50,13 +49,12 @@ header li > ul {
     margin: 0;
 }
 
+
 @media (min-width: 991px) {
 
     ul#menu-menu.menu {
-        display: grid !important;
-        grid-template: 100% / 10% 14.9% 14.3% 14.3% 14.3% 18% 14.3%;
+        display: flex !important;
         justify-content: space-between;
-        width: 100%;
     }
 
     .menu-item {
@@ -74,6 +72,16 @@ header li > ul {
 
     .menu li a:hover {
         color: orange;
+    }
+
+
+    .menu-menu-container>ul>.menu-item {
+        position: relative;
+    }
+
+    #menu-menu>li>ul {
+        position: absolute;
+        width: 14vw;
     }
 
     .navegacao-mobile {
