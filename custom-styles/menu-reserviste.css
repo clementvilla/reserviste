@@ -50,6 +50,7 @@ header li > ul {
 }
 
 
+
 @media (min-width: 991px) {
 
     ul#menu-menu.menu {
@@ -92,6 +93,10 @@ header li > ul {
     .navegacao-mobile {
         display: none !important;
     }
+}
+
+@media (min-width: 991px) {
+
 }
 
 .menu-item a img {
