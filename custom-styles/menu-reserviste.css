@@ -19,6 +19,12 @@ header > nav > ul {
     list-style-type: none;
 }
 
+header img.menu-image {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
 header figure {
     position: relative;
     width: 10vw;

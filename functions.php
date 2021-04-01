@@ -145,6 +145,15 @@ function _s_widgets_init() {
         'after_title' => '</h2>',
     ) );
 
+    register_sidebar( array(
+        'name' => esc_html__( 'slider', '_s' ),
+        'id' => 'slider',
+        'before_widget' => '<div class="nwa-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="nwa-title">',
+        'after_title' => '</h2>',
+    ) );
+
 }
 add_action( 'widgets_init', '_s_widgets_init' );
 

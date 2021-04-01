@@ -63,10 +63,23 @@ get_header();
 
 <h1 style="margin-left: 5%; margin-top: 10%;">L'association en images</h1>
 
-<?php
-echo do_shortcode('[smartslider3 slider="2"]');
-?>
+<!-- ?ph p
+ec ho do_shortcode('[smartslider3 slider="2"]');
+? -->
 
+<!--?ph p
+e cho do_shortcode('[rev_slider alias="slider-reserve"][/rev_slider]')
+? -->
+
+<!-- ajout de ma nouvelle widget area -->
+<?php if ( is_active_sidebar( 'slider' ) ) : ?>
+    <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+        <?php dynamic_sidebar( 'slider' ); ?>
+    </div>
+<?php endif; ?>
+<!-- fin nouvelle widget area -->
+
+<!--?p hp putR evSlider('[rev_slider alias="slider-reserve"][/rev_slider] ') ? -->
 
 
 <?php
