@@ -79,7 +79,7 @@ ul#menu-menu.menu > img {
 /*elements avec .menu-item dedans*/
 
 
-.menu-item {
+header .menu-item {
     padding: 10px;
     display: block;
     transition: .4s;
@@ -124,7 +124,7 @@ li:hover .submenu {
     display: block;
 }
 
-.submenu li {
+header .submenu li {
     padding: 3px;
 }
 
@@ -138,11 +138,11 @@ li:hover .submenu {
         justify-content: space-between;
     }
 
-    .menu-item {
+    header .menu-item {
         flex: auto;
     }
 
-    .menu li a {
+    header #menu-menu li a {
         padding: 0 10px;
         color: white;
         transition: .4s;
@@ -151,20 +151,20 @@ li:hover .submenu {
         text-align: left;
     }
 
-    .menu li a:hover {
+    header #menu-menu li a:hover {
         color: orange;
     }
 
-    .menu-menu-container>ul>.menu-item {
+    header .menu-menu-container>ul>.menu-item {
         position: relative;
     }
 
-    #menu-menu>li>ul {
+    header #menu-menu>li>ul {
         position: absolute;
         width: 14vw;
     }
 
-    #menu-menu>li:last-of-type>ul {
+    header #menu-menu>li:last-of-type>ul {
         position: absolute;
         width: 8vw;
     }
@@ -191,17 +191,17 @@ li:hover .submenu {
         padding-top: 100px;
     }
 
-    .menu>li{
+    #menu-menu>li{
         padding: 0 10vh;
         display: flex;
         justify-content: space-between;
     }
 
-    .menu>li:after{
+    #menu-menu>li:after{
         content: "hello";
     }
 
-    .menu li a {
+    #menu-menu li a {
         padding: 0 10px;
         color: white;
         transition: .4s;
@@ -211,7 +211,7 @@ li:hover .submenu {
         padding: 0 10px 10px 10px;
     }
 
-    .menu li a:hover {
+    #menu-menu li a:hover {
         color: orange;
     }
 

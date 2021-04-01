@@ -63,6 +63,11 @@ h2
     padding-right: 5vw;
 }
 
+.give-wrap       /*Pour decoller le contenu de la page de don du header qui est en position fixed*/
+{
+    padding-top: 65px;
+}
+
 /*//////////////////////////////////////////////////////banière///////////////////////////////////////////////////*/
 
 /*Banière de titre visible sur la plupart des pages. La banière de la page home est dans home.css*/
