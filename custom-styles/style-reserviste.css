@@ -49,7 +49,7 @@ ul {
 
 .header-correction          /*Correction du haut de page pour que le header ne monte pas sur le contenu*/
 {
-    padding-top: 7vh;
+    padding-top: 65px;
 }
 
 h2

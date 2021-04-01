@@ -1,5 +1,8 @@
 /*elements avec header dedans*/
 
+
+/*Styles generaux*/
+
 header {
     width: 100%;
     margin: 0;
@@ -14,11 +17,6 @@ header a {
 
 header > nav > ul {
     list-style-type: none;
-}
-
-header div.menu-menu-container {
-    width: 100vw;
-    background-color: black;
 }
 
 header figure {
@@ -49,92 +47,21 @@ header li > ul {
     margin: 0;
 }
 
-
-@media (min-width: 991px) {
-
-    ul#menu-menu.menu {
-        display: flex !important;
-        justify-content: space-between;
-    }
-
-    .menu-item {
-        flex: auto;
-    }
-
-    .menu li a {
-        padding: 0 10px;
-        color: white;
-        transition: .4s;
-        cursor: pointer;
-        display: -webkit-box;
-        text-align: left;
-    }
-
-    .menu li a:hover {
-        color: orange;
-    }
-
-
-    .menu-menu-container>ul>.menu-item {
-        position: relative;
-    }
-
-    #menu-menu>li>ul {
-        position: absolute;
-        width: 14vw;
-    }
-
-    #menu-menu>li:last-of-type>ul {
-        position: absolute;
-        width: 8vw;
-    }
-
-    .navegacao-mobile {
-        display: none !important;
-    }
+header div.menu-menu-container {
+    width: 100vw;
+    background-color: black;
 }
 
-.menu-item a img {
-    width: 45px;
-    height: 45px;
-    flex-shrink: 0;
-    margin-left: 15px;
-}
 
 header a {
     line-height: 38px;
 }
 
-.navegacao-mobile {
-    background: #ccc;
-    padding: 10px;
-    width: 53px;
-    cursor: pointer;
-}
-
-.input-menu-all {
-    display: none !important;
-}
-
-/* elements avec .linha-menu dedans*/
-
-.linha-menu {
-    width: 25px;
-    height: 3px;
-    border-radius: 5px;
-    background: #555;
-    margin: 4px;
-    display: block;
-}
-
-
 /*elements avec ul#menu-menu.menu dedans*/
 
-ul#menu-menu.menu {
-    display: none;
+#menu-menu {
     width: 100%;
     position: relative;
-    /*top: 0;*/
 }
 
 ul#menu-menu.menu > img {
@@ -143,16 +70,7 @@ ul#menu-menu.menu > img {
     margin-top: 10px;
 }
 
-ul#menu-menu.menu > img:nth-child(1) {
-    height: 70px;
-    width: 70px;
-}
-
-
-
-
 /*elements avec .menu-item dedans*/
-
 
 
 .menu-item {
@@ -163,8 +81,6 @@ ul#menu-menu.menu > img:nth-child(1) {
     text-align: center;
     text-decoration: none;
 }
-
-
 
 ul li .sub-menu{
     display: none;
@@ -187,43 +103,6 @@ ul li:hover header {
     background-color: white;
 }
 
-/*.input-menu-all {
-    display: none !important;
-}*/
-
-
-
-/*nav {
-    width: 100%;
-    height: 15vh;
-}*/
-
-/*
-svg {
-    width: 15%;
-    height: auto;
-}
-
-/*pour la nav*/
-
-/*
-nav > ul {
-    width: 100%;
-    height: 15vh;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    left: 8px;
-    position: relative;
-}
-
-nav > ul > li {
-    float: left;
-    padding: 14px 20px 14px 20px;
-    position: relative;
-    border-right: white solid 2px;
-}*/
-
 
 li ul.submenu {
     list-style-type: none;
@@ -243,14 +122,106 @@ li:hover .submenu {
     padding: 3px;
 }
 
-nav > ul > li > a > img, nav > ul > li > img {
-    position: relative;
-    display: none
+
+/*Version Desktop*/
+
+
+
+    ul#menu-menu.menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-item {
+        flex: auto;
+    }
+
+    .menu li a {
+        padding: 0 10px;
+        color: white;
+        transition: .4s;
+        cursor: pointer;
+        display: -webkit-box;
+        text-align: left;
+    }
+
+    .menu li a:hover {
+        color: orange;
+    }
+
+    .menu-menu-container>ul>.menu-item {
+        position: relative;
+    }
+
+    #menu-menu>li>ul {
+        position: absolute;
+        width: 14vw;
+    }
+
+    #menu-menu>li:last-of-type>ul {
+        position: absolute;
+        width: 8vw;
+    }
+
+/*Styles mobiles*/
+@media (max-width: 991px) {
+    header div.menu-menu-container {
+        height: 100vh;
+    }
+
+    header {
+        top: 0;
+    }
+
+    .lock-scroll {
+        overflow: hidden;
+    }
+
+    ul#menu-menu.menu {
+        display: block;
+    }
+
+    #menu-menu{
+        padding-top: 100px;
+    }
+
+    .menu>li{
+        padding: 0 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu>li:after{
+        content: "hello";
+    }
+
+    .menu li a {
+        padding: 0 10px;
+        color: white;
+        transition: .4s;
+        cursor: pointer;
+        display: -webkit-box;
+        width: fit-content;
+        padding: 0 10px 10px 10px;
+    }
+
+    .menu li a:hover {
+        color: orange;
+    }
+
+    .menu-menu-container>ul>.menu-item {
+        position: unset;
+    }
+
+    #menu-menu>li>ul {
+        position: unset;
+        width: unset;
+    }
+
+    #menu-menu>li:last-of-type>ul {
+        position: unset;
+        width: unset;
+    }
 }
 
-/*
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}*/
+
