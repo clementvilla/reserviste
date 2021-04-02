@@ -29,12 +29,13 @@
 <header>
 
     <div class="header">
-
+        <div id="menu-open-trigger" style=background-image:url("<?php echo get_bloginfo('template_directory')?>/images/images-menu/menu.svg");></div>
         <?php
 
         wp_nav_menu(array(
             'theme_location' => 'menu-1'
         )); ?>
+        <div id="menu-close-trigger" style=background-image:url("<?php echo get_bloginfo('template_directory')?>/images/images-menu/cross.svg");></div>
     </div>
 
 </header>

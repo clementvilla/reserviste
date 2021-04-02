@@ -11,13 +11,13 @@ footer.piedpage > .contenu3 {
 
 
 @media (min-width: 600px) {
-    footer.piedpage {
+    footer.piedpage > .contenu3 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 900px) {
-    footer.piedpage { grid-template-columns: repeat(3, 1fr); }
+    footer.piedpage > .contenu3 { grid-template-columns: repeat(4, 1fr); }
 }
 
 footer ul {

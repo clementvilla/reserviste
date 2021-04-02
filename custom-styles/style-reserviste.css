@@ -51,6 +51,12 @@ ul {
 {
     padding-top: 65px;
 }
+@media (max-width: 991px) { /*Cette correction ne s'applqe pas au menu burger et etraine par ailleurs un bug*/
+    .header-correction
+    {
+        padding-top: 0;
+    }
+}
 
 h2
 {
@@ -61,6 +67,24 @@ h2
 {
     padding-left: 5vw;
     padding-right: 5vw;
+}
+
+.give-wrap       /*Pour decoller le contenu de la page de don du header qui est en position fixed*/
+{
+    padding-top: 65px;
+}
+
+.text-justify
+{
+    text-align: justify;
+}
+.dFlexColumn
+{
+    display: flex;
+    flex-direction: column;
+}
+.mt-auto{
+    margin-top: auto;
 }
 
 /*//////////////////////////////////////////////////////banière///////////////////////////////////////////////////*/
