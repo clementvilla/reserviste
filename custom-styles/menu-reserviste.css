@@ -161,7 +161,7 @@ header .submenu li {
 
     header #menu-menu>li>ul {
         position: absolute;
-        width: 14vw;
+        width: 17vw;
     }
 
     header #menu-menu>li:last-of-type>ul {

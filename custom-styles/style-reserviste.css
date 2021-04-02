@@ -74,6 +74,18 @@ h2
     padding-top: 65px;
 }
 
+.text-justify
+{
+    text-align: justify;
+}
+.dFlexSpaceBColumn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 /*//////////////////////////////////////////////////////banière///////////////////////////////////////////////////*/
 
 /*Banière de titre visible sur la plupart des pages. La banière de la page home est dans home.css*/
