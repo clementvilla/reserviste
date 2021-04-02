@@ -13,7 +13,7 @@ get_header();
         <h1>ASSOCIATION DES RÉSERVISTES</h1>
         <h3>DU PAYS DE MONTBÉLIARD</h3>
         <img src="<?php echo get_bloginfo('template_directory')?>/images/logo-daccueil.png"  alt="logo du site"/>
-        <p>S'engager pour la nation, dans chacune de nos vies</p>
+        <p>S'engager pour la nation,<br> dans chacune de nos vies !</p>
     </section>
 </div>
 

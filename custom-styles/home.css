@@ -48,6 +48,8 @@
     grid-row-start: 3;
     grid-row-end: 6;
     padding-top: 250px;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 .accueil > .slogan > .boutoninscrire { /*position le bouton s'inscrire */
