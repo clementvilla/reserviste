@@ -1,0 +1,135 @@
+/*////////////////////////////////////////////////////////////Haut de page//////////////////////////////////////////////////////////////////*/
+
+
+.accueil > .slogan { /*grille */
+    display: grid;
+    grid-template: 1fr 5fr 5fr 1fr 1fr 1fr / 1fr 5fr 4fr 6fr;
+    height: 85vh;
+    width: 100vw;
+}
+
+.accueil {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accueil > .slogan > img {
+    position: relative;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+.accueil > .slogan > h1 { /*position h1 ordi */
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 40px;
+}
+
+.accueil > .slogan > h3 { /*position h3 ordi */
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding-top: 70px;
+    font-size: 30px;
+}
+
+.accueil > .slogan > p { /*position p ordi */
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    padding-top: 250px;
+}
+
+.accueil > .slogan > .boutoninscrire { /*position le bouton s'inscrire */
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+/*///////////////////////////////////////////////////////////// Articles ////////////////////////////////////////////////////////////////////////*/
+
+.articles-preview {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.article-preview-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.article-preview-item > img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.article-preview-link {
+    margin: auto auto 0 auto;
+}
+
+
+/*/////////////////////////////////////////////////////Responsive design/////////////////////////////////////////////////////////////////*/
+
+
+@media (max-width: 991px) {
+    .accueil .slogan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .accueil .slogan h1
+    {
+        margin-bottom: 0;
+        margin-top: 5vh;
+    }
+
+    .accueil .slogan h1,
+    .accueil .slogan h3
+    {
+        text-align: center;
+    }
+
+    .accueil .slogan h3
+    {
+        margin-top: 0;
+    }
+
+    .accueil .slogan h3,
+    .accueil .slogan p{
+        padding: 0 10px;
+    }
+
+    .accueil .slogan img{
+        max-width: 50%;
+    }
+
+
+}

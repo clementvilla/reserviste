@@ -1,0 +1,116 @@
+
+/*//////////FICHIER DE STYLES GÉNÉRAUX//////////*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Anciens Globaux
+# Nouveaux Styles - Général
+# Banière
+
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
+
+main {
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    height: auto;
+    overflow-x: hidden;
+    background: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*///////////////////////////////////////////////////////NOUVEAUX STYLES//////////////////////////////////////////////////////*/
+
+
+/*///////////////////////////////////////////////////////////General//////////////////////////////////////////////////////////*/
+
+.header-correction          /*Correction du haut de page pour que le header ne monte pas sur le contenu*/
+{
+    padding-top: 65px;
+}
+@media (max-width: 991px) { /*Cette correction ne s'applqe pas au menu burger et etraine par ailleurs un bug*/
+    .header-correction
+    {
+        padding-top: 0;
+    }
+}
+
+h2
+{
+    color: black;
+}
+
+.bodyPadding                /* Padding sur les pages pour décoller le contenu des bords*/
+{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.give-wrap       /*Pour decoller le contenu de la page de don du header qui est en position fixed*/
+{
+    padding-top: 65px;
+}
+
+.text-justify
+{
+    text-align: justify;
+}
+.dFlexColumn
+{
+    display: flex;
+    flex-direction: column;
+}
+.mt-auto{
+    margin-top: auto;
+}
+
+/*//////////////////////////////////////////////////////banière///////////////////////////////////////////////////*/
+
+/*Banière de titre visible sur la plupart des pages. La banière de la page home est dans home.css*/
+
+.baniere > .slogan {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 5fr 3fr 5fr;
+    height: 40vh;
+    width: 100vw;
+}
+
+.baniere {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.baniere > .slogan > h1 {
+    font-size: 50px;
+    font-weight: normal;
+    grid-column-start: 2;
+}
+
+.baniere > .slogan > img {
+    grid-column-start: 4;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

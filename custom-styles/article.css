@@ -1,0 +1,49 @@
+
+
+#articlType h2
+{
+    color: black;
+    text-align: center;
+}
+
+#articlType
+{
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+#articlType .signature
+{
+    margin-top: 50px;
+}
+
+#articlType ul
+{
+    list-style: revert;
+}
+
+#articlType ul li
+{
+    margin-left: 40px;
+    position: unset;
+    float: unset;
+}
+
+#articlType p
+{
+    margin: 1rem 0;
+}
+
+#articlType {
+    width: 100%;
+    height: auto;
+}
+
+#articlType img {
+
+    display: block;
+    margin: 5vh auto 5vh auto;
+    height: auto;
+    border-radius: 10px;
+
+}

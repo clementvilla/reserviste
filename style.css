@@ -1,10 +1,10 @@
 /*/
 Theme Name: Réserviste du pays de Montbéliard
 Theme URI:
-Author: Lucas Gurgey
+Author: Clara Bouvier, Charlotte Jeannot, Laura Demougeot, Clément Villa, Seb Jourdain, Allan Pinot
 Author URI:
-Description: voici le thème du site de l'association des officier réserviste du pays de montbéliard
-Version: 1.0.0
+Description: Thème du site de l'association des officiers réservistes du pays de montbéliard
+Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: _s
@@ -46,11 +46,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Spectral+SC');
-
-
-@import url('lesuperstyledelaura.css');
-@import url('evenement-reserviste.css');
 
 html {
 	line-height: 1.15; /* 1 */
@@ -844,10 +839,7 @@ a:hover, a:active {
 	display: block;
 }
 
-.post,
-.page {
-	margin: 0 0 1.5em;
-}
+
 
 .updated:not(.published) {
 	display: none;

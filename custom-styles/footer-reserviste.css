@@ -1,0 +1,73 @@
+footer.piedpage > .contenu3 {
+    display: grid;
+    /*grid-template: 100%/ 15% 35% 25% 25%;*/
+    min-height: 250px;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+    grid-gap: 1rem;
+}
+
+
+
+@media (min-width: 600px) {
+    footer.piedpage > .contenu3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    footer.piedpage > .contenu3 { grid-template-columns: repeat(4, 1fr); }
+}
+
+footer ul {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    list-style: none;
+}
+
+footer .menu-item a img {
+    width: 100px;
+    height: 93px;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer li {
+    padding: 3px;
+}
+
+footer .menu-item {
+    padding: 3px;
+}
+
+
+/*widget du footer (oui je sais ca s'appelle header alors que c'est un footer pas la peine de me crier dessus ;-) )*/
+/*nwa c'est new widget area*/
+
+h2.nwa-title {
+    color: white;
+}
+
+.nwa-header-widget {
+    padding: 0 10px;
+}
+
+.nwa-header-widget a {
+    text-decoration: none;
+    color: white;
+}
+
+.nwa-header-widget a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+

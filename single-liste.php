@@ -1,6 +1,5 @@
 <?php
 
-get_header();
 
 $args = array(
     'post_type' => 'post'
@@ -21,7 +20,6 @@ if (have_posts()) :
 					endif; ?>
                 <div class="article"
                      style="background-image: url(<?php echo $image;  ?>);">
-                    <div class="vide"></div>
                     <div class="texte">
                         <h4><?php the_title(); ?></h4>
                         <p><?php the_excerpt(); ?></p>
@@ -39,6 +37,6 @@ if (have_posts()) :
 endif;
 
 
-get_footer();
+
 
 ?>

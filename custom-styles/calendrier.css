@@ -1,0 +1,14 @@
+@media screen and (min-width: 800px) {
+.eme-calendar-full
+{
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+}
+
+@media screen and (max-width: 800px) {
+#calendrier p, #calendrier h2{
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+}
