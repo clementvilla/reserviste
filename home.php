@@ -61,7 +61,6 @@ get_header();
 
 <!--Carousel -->
 
-<h1 style="margin-left: 5%; margin-top: 10%;">L'association en images</h1>
 
 <!-- ?ph p
 ec ho do_shortcode('[smartslider3 slider="2"]');

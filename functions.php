@@ -218,6 +218,9 @@ function _s_scripts() {
     wp_register_style('footer-reserviste', get_template_directory_uri() . '/custom-styles/footer-reserviste.css', array(), '1.0', 'all');
     wp_enqueue_style('footer-reserviste');
 
+    wp_register_style('credits', get_template_directory_uri() . '/custom-styles/credit.css', array(), '1.0', 'all');
+    wp_enqueue_style('credits');
+
     /*Les scripts*/
 
     wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
