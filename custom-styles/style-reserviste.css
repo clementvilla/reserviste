@@ -51,6 +51,12 @@ ul {
 {
     padding-top: 65px;
 }
+@media (max-width: 991px) { /*Cette correction ne s'applqe pas au menu burger et etraine par ailleurs un bug*/
+    .header-correction
+    {
+        padding-top: 0;
+    }
+}
 
 h2
 {

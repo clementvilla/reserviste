@@ -120,9 +120,7 @@ li ul.submenu {
     border-radius: 5px;
 }
 
-li:hover .submenu {
-    display: block;
-}
+
 
 header .submenu li {
     padding: 3px;
@@ -131,7 +129,9 @@ header .submenu li {
 
 /*Version Desktop*/
 
-
+    li:hover .submenu {
+        display: block;
+    }
 
     ul#menu-menu.menu {
         display: flex;
@@ -169,6 +169,12 @@ header .submenu li {
         width: 8vw;
     }
 
+    #menu-open-trigger,
+    #menu-close-trigger
+    {
+        display: none;
+    }
+
 /*Styles mobiles*/
 @media (max-width: 991px) {
     header div.menu-menu-container {
@@ -177,6 +183,13 @@ header .submenu li {
 
     header {
         top: 0;
+        transform: translateX(100%);
+        transition: all 0.5s;
+    }
+
+    header.menuOpened
+    {
+        transform: translateX(0%);
     }
 
     .lock-scroll {
@@ -184,21 +197,45 @@ header .submenu li {
     }
 
     ul#menu-menu.menu {
-        display: block;
+        flex-direction: column;
+        justify-content: start;
     }
 
     #menu-menu{
-        padding-top: 100px;
+        padding-top: 50px;
+        height: calc( 100vh );
     }
 
     #menu-menu>li{
-        padding: 0 10vh;
-        display: flex;
+        /*padding: 0 10vh;*/
+        /*display: flex;
         justify-content: space-between;
+        flex-direction: column;*/
+        position: relative;
+        border-bottom: solid white 1px;
     }
 
-    #menu-menu>li:after{
-        content: "hello";
+    #menu-menu>li:first-of-type
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #menu-menu>.menu-item-has-children:after{
+        content: "";
+        width: 15px;
+        height: 15px;
+        border: solid #ffffff;
+        border-width: 0 3px 3px 0;
+        display: block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        position: absolute;
+        top: 16px;
+        right: 29px;
     }
 
     #menu-menu li a {
@@ -220,14 +257,79 @@ header .submenu li {
     }
 
     #menu-menu>li>ul {
-        position: unset;
-        width: unset;
+        position: unset !important;
+        width: unset !important;
+        background-color: #131313;
+    }
+
+    #menu-menu>li>ul>li ul{
+        padding: 0;
+        background-color: #131313;
     }
 
     #menu-menu>li:last-of-type>ul {
-        position: unset;
-        width: unset;
+        position: unset !important;
+        width: unset !important;
     }
+
+    header img.menu-image {
+        display: block;
+        margin: auto;
+    }
+
+
+    #menu-open-trigger
+    {
+        display: block;
+        background-size: contain;
+        height: 50px;
+        width: 50px;
+        color: white;
+    }
+    #menu-close-trigger
+    {
+        display: block;
+        background-size: contain;
+        height: 40px;
+        width: 40px;
+        color: white;
+    }
+
+    #menu-open-trigger
+    {
+        position: absolute;
+        top: 10px;
+        left: -60px;
+    }
+    body.logged-in #menu-open-trigger
+    {
+        position: absolute;
+        top: 50px;
+        left: -60px;
+    }
+    #menu-close-trigger
+    {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    body.logged-in #menu-close-trigger
+    {
+        position: absolute;
+        top: 50px;
+        right: 15px;
+    }
+
+    #menu-item-1034>a>span{
+        display: block;
+    }
+
+    #menu-item-1034>a>img{
+        display: none;
+    }
+
 }
+
+
 
 
