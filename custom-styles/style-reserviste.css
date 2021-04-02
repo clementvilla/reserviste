@@ -78,12 +78,13 @@ h2
 {
     text-align: justify;
 }
-.dFlexSpaceBColumn
+.dFlexColumn
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+}
+.mt-auto{
+    margin-top: auto;
 }
 
 /*//////////////////////////////////////////////////////banière///////////////////////////////////////////////////*/
