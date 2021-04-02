@@ -71,17 +71,9 @@ ec ho do_shortcode('[smartslider3 slider="2"]');
 e cho do_shortcode('[rev_slider alias="slider-reserve"][/rev_slider]')
 ? -->
 
-<!-- ajout de ma nouvelle widget area
-<?php if ( is_active_sidebar( 'slider' ) ) : ?>
-    <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
-        <?php dynamic_sidebar( 'slider' ); ?>
-    </div>
-<?php endif; ?>
- fin nouvelle widget area -->
-
 <!--?p hp putR evSlider('[rev_slider alias="slider-reserve"][/rev_slider] ') ? -->
 
-<?php echo do_shortcode('[metaslider id="1033"]'); ?>
+<?php echo do_shortcode('[metaslider id="1327"]'); ?>
 
 
 <?php
