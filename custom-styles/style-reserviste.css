@@ -109,6 +109,12 @@ h2
     grid-column-start: 2;
 }
 
+@media (max-width: 991px) {
+    .baniere > .slogan > h1 {
+        font-size: 2rem;
+    }
+}
+
 .baniere > .slogan > img {
     grid-column-start: 4;
 }
