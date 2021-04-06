@@ -185,9 +185,6 @@ function _s_scripts() {
     wp_register_style('style-typo', get_template_directory_uri() . '/custom-styles/style-typo.css', array(), '1.0', 'all');
     wp_enqueue_style('style-typo');
 
-    wp_register_style('animation', get_template_directory_uri() . '/custom-styles/animation.css', array(), '1.0', 'all');
-    wp_enqueue_style('animation');
-
     wp_register_style('evenement-reserviste', get_template_directory_uri() . '/custom-styles/evenement-reserviste.css', array(), '1.0', 'all');
     wp_enqueue_style('evenement-reserviste');
 
